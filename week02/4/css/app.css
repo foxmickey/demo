@@ -1,0 +1,42 @@
+    *{
+        margin: 0px;
+        padding: 0px;
+    }
+    body{
+        background-color: #CAC6C6;
+    }
+    .shoes{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+        overflow: auto;
+    }
+    .box{
+        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+        margin: 100px;
+        padding: 10px;
+        height: 100px;
+        width: 100px;
+        background-color: #F40;
+        border: 10px solid #69794B;
+    }
+    .shoes1{
+        width: 100px;
+        height: 100px;
+        background-color: orange;
+    }
+    .box1{
+        margin: 100px;
+        padding: 10px;
+        height: 140px;
+        width: 140px;
+        background-color: #F40;
+        border: 10px solid #69794B;
+        box-sizing:border-box;
+    }
+    .clo{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        -webkit-column-rule:dotted; 
+        -moz-column-rule:dotted; 
+    }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" name="viewport">
+<title>康棒棒--3期3班--百度</title>
+<meta name="keywords" content="搜索 极客学院 康棒棒 3期3班">
+<meta name="description" content="这是极客学院大web就业班3期3班康棒棒的第一个模拟百度网站搜索的作业">
+<link href="images/bangfavicon.ico" rel="shortcut icon">
+<link href="css/app.css"rel="stylesheet" type="text/css">
+<script src="js/jquery-2.1.4.min.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+</head>
+<body id="body">
+<div id="logo-in">
+    <div id="logo-in-top">
+        <span>
+            <img src="images/du.png" class="top-img-left">
+            <a>登陆百度账号</a>
+        </span>
+        <span>
+            <img src="images/XX.png" onclick="openLogoin()" class="top-img-right">
+        </span>
+    </div>
+    <div id="logo-name-password">
+        <p class="main-p content-new"><a>短信快捷登陆</a></p>
+        <p class="main-p content-name" id="content-name"><a class="con-name-img"></a><input class="name-input" onfocus="nameOne()" onblur="nameTwo()" on autocomplete="off" type="text" placeholder="手机/邮箱/用户名"></p>
+        <p class="main-p content-password" id="content-password"><a class="con-pass-img"></a><input class="pass-input" type="text" onfocus="passOne()" onblur="passTwo()" on autocomplete="off" placeholder="密码"></p>
+        <p class="main-p content-zidong">
+            <input type="checkbox" class="con-checkbox">
+            <a class="zidong-a">下次自动登陆</a>
+            <a class="zidong-w">忘记密码？</a>
+        </p>
+        <p class="main-p content-logoin"><a class="con-logoin-a">登陆</a></p>
+        <p class="main-p content-zhuce"><a class="con-zhuce">立即注册</a></p>
+    </div>
+    <div><p class="logo-foot-P">可以使用以下方式登陆</p></div>
+    <div><p><span><img src="images/qq.jpg" title="使用QQ账号登陆" class="footing-qq"></span><span><img src="images/xinlang.jpg" title="使用新浪账号登陆" class="footing-xinlang"></span></p></div>
+</div>
+<div id="content">
+	<ul class="content-ul">
+		<li><a href="http://news.baidu.com/" title="查看国内大事件">新闻</a></li>
+		<li><a href="http://www.hao123.com/" title="跳转到hao123首页">hao123</a></li>
+		<li><a href="http://map.baidu.com/" title="点击查看地图">地图</a></li>
+		<li><a href="http://v.baidu.com/?fr=bd" title="百度视频 更加精彩">视频</a></li>
+		<li><a href="http://tieba.baidu.com/" title="百度贴吧 中国最大的贴吧">贴吧</a></li>
+		<li><a id="con-ul-li-6" title="登录您的帐号" onClick="show()">登录</a></li>
+        <li><a id="con-ul-li-7" href="" title="">设置</a></li>
+        <li><a id="con-ul-li-8" href="" title="查看更多产品信息" onmousemove="showPro()" onmouseout="closeProd()">更多产品</a></li>
+	</ul>
+    <br/>
+    <div id="body1">
+    	<span><img id="content-img"  title="百度搜索" alt="百度logo" src="images/bd_logo.png"> </span>
+		<form id="form-one">
+    		<span id="con-span"></span>
+    	</form>
+        <form id="form-two" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+            <input id="two-input" class="s-input" type=text name=word onfocus="bianse()" onblur="quse()" autocomplete="off">
+            <input type="submit" value="百度一下" id="word">
+		</form>
+    </div>
+    <div id="top-set" onmouseover="showSet()" onmouseout="closeSet()">
+        <em class="top-set-em"></em>
+        <span class="top-set-sanjiao"></span>
+        <a class="set-a">搜索设置</a>
+        <a class="set-a">高级搜索</a>
+        <a class="set-a">关闭预测</a>
+        <a class="set-a">搜索历史</a>
+    </div>
+</div>
+<div id="div-foot">
+    <p class="bottom-p">
+        <a href="https://www.baidu.com/cache/sethelp/help.html" rel="nofollow" title="百度首页">把百度设为首页</a>
+        <a title="关于百度" href="http://home.baidu.com/" rel="nofollow">关于百度</a>
+        <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile" rel="nofollow" title="About Baidu">About Baidu</a>
+    </p>
+    <span class="footing-time">©&nbsp;2015&nbsp;Baidu&nbsp;
+        <a class="btm-a" href="http://www.baidu.com/duty/" rel="nofollow" title="使用百度前必读">使用百度前必读</a>&nbsp;
+        <a class="btm-a" href="http://jianyi.baidu.com/" rel="nofollow" title="意见反馈">意见反馈</a>&nbsp;京icp证030173号
+        <a class="btm-img"></a>
+    </span>
+</div>
+<div id="top-product" class="top-product" onmousemove="showPro()" onmouseout="closeProd()">
+    <a class="top-pro" id="top-pro">更多产品</a>
+    <a><span id="nuomi"></span>糯米</a>
+    <a><span id="zhidao"></span>知道</a>
+    <a><span id="music"></span>音乐</a>
+    <a><span id="photos"></span>图片</a>
+    <a><span id="wenku"></span>文库</a>
+    <a><span id="fengyun"></span>风云榜</a>
+    <a><span id="tuiguang"></span>百度推广</a>
+    <a>全部产品</a>
+</div>
+    
+</body>
+</html>

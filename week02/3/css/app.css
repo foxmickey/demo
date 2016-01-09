@@ -1,0 +1,557 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+input,
+button,
+select,
+textarea{ outline:none;}
+textarea{resize:none;}
+/*top-ul－begin */
+#content{
+	min-width:810px;
+/*	height:635px;*/
+	position: relative;
+	background-color:transparent;
+}
+.content-ul{
+	display:block;
+	float: right;
+	margin-top:19px;
+	padding-right:3px;
+}
+.content-ul li{
+	color:#333;
+	display:block;
+	padding-right:10px;
+	display: inline;
+}
+.content-ul li a{
+	font-family:"宋体";
+	font-size:13px;
+	font-weight:bold;
+	line-height:24px;
+	height:24px;
+	font-weight:bold;
+	color:#111;
+}
+.content-ul li a:hover{
+	color:#00C;
+}
+#con-ul-li-6{
+	font-weight:500;
+	text-decoration:underline;
+	cursor:pointer;
+}
+#con-ul-li-7{
+	font-weight:500;
+}
+#con-ul-li-8{
+	color:#FFF;
+	text-decoration:none;
+	background-color:#3385FF;
+	padding:4.5px 4px;
+	height:30px;
+	margin-left:10px;
+	line-height:25px;
+	font-weight:500;
+}
+/*ul-结束 */
+/*登录界面－begin  */
+#logo-in{
+	width:360px;
+	height:375px;
+	z-index:1000;
+	position:fixed;
+	left:50%;
+	margin-left:-195px;
+	top:50%;
+	margin-top:-225px;
+	background-color:#FFF;
+	display:none;
+}
+#logo-in-top{
+	width: 360PX;
+	height: 50px;
+	float: left;
+	background-color: #EAEAEA;
+}
+.top-img-left{
+	float: left;
+	padding-left: 20px;
+	padding-top: 10px;
+}
+#logo-in-top span a{
+	font-size: 18px;
+	height: 50px;
+	line-height: 45px;
+	padding-left: 10px;
+	font-family: "宋体"；
+}
+.top-img-right{
+	float: right;
+	width:15px;
+	height:15px;
+	padding-right: 20px;
+	padding-top: 18px;
+	cursor:pointer;
+}
+#logo-name-password{
+	width: 360px;
+	height: 300px;
+}
+.main-p{
+	width:316px;
+	height:50px;
+	float:left;
+	font-size: 15px;
+	font-family: "宋体";
+	margin-top:10px;
+	margin-left:20px;
+	border:2px solid #F00;
+}
+/* 短信快捷登陆 */
+.content-new{
+	border:0px;
+	height:25px;
+}
+.content-new a{
+	float: right;
+	color:#666;
+	font-size: 12px;
+	display: block;
+	height: 26px;
+	line-height:25px;
+	padding-left:18px;
+	text-decoration:none;
+	cursor: pointer;
+	background:url(../images/input_icons_24_915272c4.png) no-repeat;
+	background-position:-5px -39px;
+}
+.content-new a:hover{
+	color:#3385FF;
+}
+/* 手机用户名 */
+.content-name{
+	border:1px solid #CCC;
+	height:35px;
+	padding-left:5px;
+}
+.con-name-img{
+	display:block;
+	height:26px;
+	width:26px;
+	overflow:hidden;
+	background:url(../images/input_icons_24_915272c4.png) no-repeat;
+	background-position:0px -105px;
+}
+.name-input{
+	position:absolute;
+	height:20px;
+	font-size:13px;
+	font-family:"宋体";
+	width:280px;
+	margin-top:-18px;
+	margin-left:28px;
+	border:0px;
+}
+/* 密码 */
+.content-password{
+	border:1px solid #CCC;
+	height:35px;
+	padding-left:5px;
+}
+.con-pass-img{
+	display:block;
+	height:26px;
+	width:26px;
+	overflow:hidden;
+	background:url(../images/input_icons_24_915272c4.png) no-repeat;
+	background-position:0px -183px;
+}
+.pass-input{
+	position:absolute;
+	height:20px;
+	font-size:13px;
+	font-family:"宋体";
+	width:280px;
+	margin-top:-18px;
+	margin-left:28px;
+	border:0px;
+}
+/* 下次自动登陆  忘记密码 */
+.content-zidong{
+	border: 0px;
+	height: 20px;
+	float: left;
+}
+.con-checkbox{
+	float: left;
+	cursor: pointer;
+	margin-top: 4px;
+}
+.zidong-a{
+	float: left;
+	font-size: 12px;
+	color: #666;
+	padding-top: 3px;
+	padding-left: 8px;
+	font-family: "宋体";
+}
+.zidong-w{
+	float: right;
+	font-size: 12px;
+	color:#3385FF;
+	padding-top: 3px;
+	cursor: pointer;
+	font-family: "宋体";
+}
+/* 登陆 */
+.content-logoin{
+	border: 0px;
+	display:block;
+	height:40px;
+	text-align: center;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius:5px;
+	-0-border-radius:5px;
+	border-radius: 5px;
+	background-color:#3385FF;
+}
+.con-logoin-a{
+	color: #FFF;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+	cursor: pointer;
+	line-height: 40px;
+}
+.content-zhuce{
+	height: 20px;
+	display: block;
+	border: 0px;
+}
+.con-zhuce{
+	float: right;
+	font-size: 12px;
+	color: #3385FF;
+	padding-top: 3px;
+	cursor: pointer;
+	font-family: "宋体";
+}
+/* 登陆--footing */
+.logo-foot-P{
+	font-family: "宋体";
+	font-size: 12px;
+	color: #666;
+	padding-left: 20px;
+}
+.footing-qq{
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin-top: 20px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+.footing-xinlang{
+	float: left;
+	width: 25px;
+	height: 25px;
+	margin-top: 17px;
+	margin-left: 20px;
+	cursor: pointer;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #CCC;
+	font-size:12px;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #CCC;
+	font-size:12px;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    color: #CCC;
+	font-size:12px;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    color: #CCC;
+	font-size:12px;
+}
+
+/* 登录界面结束*/
+/* 设置界面开始*/
+#top-set{
+	position: absolute;
+	width: 65px;
+	height: 90px;
+	margin:0 auto;
+	background-color: #FFF;
+	border: 1px solid #ccc;
+	top:50px;
+	left: 50%;
+	opacity: 0;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	-o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	-ms-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	box-shadow: 0 0 10px rgba(0,0,0,0.3);
+	text-align:center;
+}
+.top-set-em{
+	display: block;
+	position:absolute;
+	width: 0px;
+	height: 0px;
+	border-width:7px;
+	overflow: hidden;
+	border-style:solid dashed dashed;
+	border-color:transparent transparent #F00;
+	border-bottom: 7px solid #ccc;
+	top: -14px;
+	left: 25px;
+}
+.top-set-sanjiao{
+	display: block;
+	position:absolute;
+	width: 0px;
+	height: 0px;
+	overflow: hidden;
+	border-width:5px;
+	border-style:solid dashed dashed;
+	border-color:transparent transparent #0F0;
+	border-bottom: 5px solid #fff;
+	top: -10px;
+	left: 27px;
+}
+.set-a{
+	font-size: 12px;
+	font-family: "宋体";
+	color: #666;
+	display:block;
+	width:65px;
+	height:20px;
+	line-height:20px;
+}
+/* 设置结束 */
+/*更多产品 */
+.top-product{
+	width: 75px;
+	height: 100%;
+	position: absolute;
+	border-left:1px solid #CCC;
+	background-color:#F8F8F8;
+	top: 0px;
+	right: 0px;
+	padding-right:13px;
+	display: none;
+	text-align:center;
+}
+.top-product a{
+	color:#111;
+	display:block;
+	text-decoration:none;
+	padding:10px 5px;
+	font-size: 12px;
+	font-weight:500;
+	font-family:"宋体";
+	margin-left:14.5px;
+	width:50px;
+	border-bottom:1px solid #CCC;
+}
+.top-pro{
+	color:#FFF;
+	display:block;
+	text-decoration:none;
+	padding:4.5px 4px;
+	height:30px;
+	font-size: 12px;
+	line-height:25px;
+	font-weight:500;
+	font-family:"宋体";
+	margin-top:8px;
+	margin-left:0px;
+}
+#nuomi{
+	width:36px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	padding-left:6px;
+	background:url(../images/many.png) no-repeat;
+	background-position:6px 0px;
+}
+#zhidao{
+	width:30px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	padding-left:6px;
+	margin-left:5px;
+	background:url(../images/many.png) no-repeat;
+	background-position:-36px 0px;
+}
+#music{
+	width:30px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	padding-left:10px;
+	margin-left:5px;
+	background:url(../images/many.png) no-repeat;
+	background-position:-72px 0px;
+}
+#photos{
+	width:30px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	padding-left:7px;
+	margin-left:7px;
+	background:url(../images/many.png) no-repeat;
+	background-position:-112px 0px;
+}
+#wenku{
+	width:30px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	padding-left:7px;
+	margin-left:7px;
+	background:url(../images/many.png) no-repeat;
+	background-position:-147px 0px;
+}
+#fengyun{
+	width:30px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	padding-left:7px;
+	margin-left:7px;
+	background:url(../images/many.png) no-repeat;
+	background-position:-183px 0px;
+}
+#tuiguang{
+	width:30px;
+	height:36px;
+	display:block;
+	overflow:hidden;
+	padding-left:7px;
+	margin-left:7px;
+	background:url(../images/many.png) no-repeat;
+	background-position:-220px 0px;
+}
+/* logo及搜索－begin */
+#body1{
+	width:640px;
+	height:200px;
+	margin: 200px auto;
+	background-color:transparent;
+}
+#content-img{
+	width:270px;
+	height:129px;
+	padding-left:50%;
+	margin-left:-135px;
+}
+/* logo结束*/
+#form-one{
+	width:641px; height:36px; margin:20px auto 0px;
+	background-color:#FFF;
+}
+#form-two{
+	margin-top:-35px;
+	margin-left:5px;
+}
+#two-input{
+	border:0px solid #F0F"  onfocus="checkHttps" name="word"  size="40" type="text
+}
+.s-input{
+	width:500px;
+	height:22px;
+	border:0px;
+	padding-top:6px;
+	padding-left:5px;
+}
+#con-span{
+	width:539;
+	height:34px;
+	display:block;
+	border:1px solid #CCC;
+	margin:0px;
+	padding:0px;
+}
+/* 百度一下－begin */
+#word{
+	font-family:"宋体";
+	font-size:15px;
+	height:37px;
+	line-height:37px;
+	letter-spacing:1px;
+	height:36px;
+	width:100px;
+	display:block;
+	float:right;
+	margin-top:-1px;
+	margin-right:-1px;
+	background-color:#3385FF;
+	border:0px;
+	color:#FFF;
+	cursor: pointer;
+}
+ /* 脚步版权－begin */
+#div-foot{
+	width:720px;
+	height:45px;
+	position:absolute;
+	bottom: 20%;
+	left: 50%;
+	margin-left: -360px;
+	text-align:center;
+}
+.bottom-p{
+	color:#00C;
+	font-family:Arial;
+	font-size:12px;
+	width:720px;
+	height:15px;
+}
+.footing-time{
+	font-size:12px;
+	font-family:Arial;
+	color:#777;
+	margin-right:-190px;
+}
+.bottom-p a{
+	color: #00C;
+	padding:0 6px;
+}
+.bottom-p a:link,.bottom-p a:visited,.bottom-p a:hover,.bottom-p a:active{
+	color: #00C;
+}
+.btm-a{
+	color:#777;
+}
+.btm-img{
+	width:15px;
+	height:15px;
+	display:block;
+	float:right;
+	margin-right:193px;
+	margin-top:3px;
+	background:url(../images/9.png) no-repeat;
+	background-size:30px 30px;
+	background-position:-10px -5px;
+}
+.btm-img img{
+	width:15px;
+	height:auto;
+}
+

@@ -1,0 +1,241 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    cursor: auto;
+}
+body{
+    background-image:url(../images/bg.jpg);
+}
+.con{
+    width: 710px;
+    height:auto;
+    background-color: #FFF;
+    margin:10px auto;
+    border-radius: 35px;
+}
+.top-lable{
+    width: 710px;
+    height: 82px;
+    display: block;
+    background:url(../images/qdjjlogo.gif) no-repeat;
+    background-position:29px 3px;
+    background-color:transparent;/* 头部背景颜色*/
+}
+/*注册，登陆，收藏本站的样式 */
+.top-lable ul{
+    float: right;
+    padding-top: 63px;
+    padding-right: 29px;
+}
+.top-lable ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 8px;
+}
+.top-lable ul li a{
+    cursor: pointer;
+    text-decoration: none;
+    color:#F09;
+    font-size: 12px;
+    font-family: "宋体";
+}
+/* 主体部分开始*/
+.body-lable{
+    display: block;
+    width: 710px;
+    height:auto;
+    background-color:transparent;/* 中间背景颜色*/
+}
+.body-table{
+    width: 639px;
+    margin-left: 35px;
+}
+/* 表头居中*/
+.xjy{
+    text-align: center;
+    display: block;
+    font-size: 18px;
+    width: 100%;
+    height:25px;
+    margin-top: -4px;
+    font-weight: bold;
+    color: rgb(51,51,51);
+}
+.body-tbody{
+    width: 90%;
+    height: auto;
+    display: block;
+    margin-left: 35px;
+    position: relative;
+}
+/* 去除表默认表型 */
+table{
+border-collapse:collapse;
+} 
+/*设置表边框 */
+.body-table,.body-table tr,.body-table td{
+    border: 1px solid #ccc;
+    font-size: 12px;
+    color: rgb(51,51,51);
+}
+/* 第一个tr的内容居中对齐*/
+.one{
+    background-image:url(../images/beijin1.gif);
+    text-align: center;
+}
+.two{
+    background-color: #EEEEEE;
+}
+.two a{
+    font-size: 12px;
+    padding-left: 3px;
+    color: rgb(0,51,153);
+}
+/* 让左边td 向右浮动*/
+.td-right{
+    vertical-align: middle;
+}
+.td-right a{
+    float: right;
+}
+
+.body-table td{
+    padding: 2px 2px;
+}
+
+/* 脚步*/
+.footing-lable{
+    width: 710px;
+    height: 46px;
+    display: block;
+    text-align: center;
+    background-color:transparent;/* 底部背景颜色*/
+}
+.footing-lable p{
+    font-size: 11px;
+}
+.banquan{
+    font-size: 13px;
+    margin-left: -5px;
+    position: absolute;
+	font-family:Arial;
+}
+/* 公共的类--*/
+.main-a{
+    font-family: "宋体";
+    font-size: 12px;
+    color: rgb(51,51,51);
+}
+.lan-a{
+    font-size: 12px;
+    color: rgb(0,51,163);
+    font-family: "宋体";
+}
+.red-a{
+    font-size: 12px;
+    color: rgb(255,0,0);
+    font-family: "宋体";
+}
+.red-star{
+    color: #f00;
+    font-size: 11px;
+}
+/* text样式*/
+.body-table input[type="text"]{
+    width: 200px;
+    height: 20px;
+    margin: 5px 5px;
+    font-size: 12px;
+    color: #666;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    padding-left: 5px;
+}
+.body-table input[type="checkbox"]{
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+}
+.body-table select{
+    margin:5px;
+}
+.body-table p{
+    padding:5px 5px;
+    text-align: justify;
+}
+/*textare */
+.text-area{
+    width:400px;
+    height：50px;
+    color:#555;
+    font-size:12px;
+    margin-left: 5px;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.se-pth{
+    width: 100px;
+}
+/* 提交按钮*/
+.foot-submit{
+    padding: 8px 15px;
+    font-family: "宋体";
+    font-weight: bold;
+    line-height: 1;
+    width: 80px;
+    color: #444;
+    border: none;
+    background: #999;
+    -webkit-border-radius:25px;
+    -moz-border-radius:25px;
+    -0-border-radius:25px;
+    -ms-border-radius:25px;
+    border-radius:25px;
+    background-image: -webkit-gradient(linear,0% 0%,0% 100%,from(#FFF),to(#BBB));
+    background-image: -moz-linear-gradient(0 100% 90deg,#ffF,#bbb);
+    text-shadow:0 1px 1px rgba(255,255,255,0.85);
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    -ms-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    -o-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+}
+
+.body-table input[type="text"]:focus{
+    -webkit-box-shadow: 0 0 12px rgba(51,204,255,0.5);
+    -moz-box-shadow: 0 0 12px rgba(51,204,255,0.5);
+    -ms-box-shadow: 0 0 12px rgba(51,204,255,0.5)
+    box-shadow: 0 0 12px rgba(51,204,255,0.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
