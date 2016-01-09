@@ -1,0 +1,146 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+input,button,select,textarea{ outline:none;}
+textarea{resize:none;}
+#content{
+	min-width:810px;
+	height:614px;
+}
+#body{
+	width:640px;
+	height:200px;
+	margin:32px auto;
+	background-color:transparent;
+}
+#form-one{
+	width:641px; height:36px; margin:20px auto 0px;
+	background-color:#FFF;
+}
+.s-input{
+	width:500px;
+	height:22px;
+	border:0px;
+	padding-top:6px;
+	padding-left:5px;
+}
+.content-ul{
+	display:block;
+	float: right;
+	margin-top:19px;
+	padding-right:3px;
+}
+.content-ul li{
+	color:#333;
+	display:block;
+	padding-right:10px;
+	display: inline;
+}
+.content-ul li a{
+	font-family:"宋体";
+	font-size:13px;
+	font-weight:bold;
+	line-height:24px;
+	height:24px;
+	font-weight:bold;
+	color:#111;
+}
+.content-ul li a:hover{
+	color:#00C;
+}
+#content-img{
+	width:270px;
+	height:129px;
+	padding-left:50%;
+	margin-left:-135px;
+}
+#con-span{
+	width:539;
+	height:34px;
+	display:block;
+	border:1px solid #CCC;
+	margin:0px;
+	padding:0px;
+}
+#con-ul-li-6{
+	font-weight:500;
+	text-decoration:underline;
+	cursor:pointer;
+}
+#con-ul-li-7{
+	font-weight:500;
+}
+#con-ul-li-8{
+	color:#FFF;
+	text-decoration:none;
+	background-color:#3385FF;
+	padding:4.5px 4px;
+	height:30px;
+	line-height:25px;
+	font-weight:500;
+}
+#bdyx{
+	font-family:"宋体";
+	font-size:15px;
+	height:37px;
+	line-height:37px;
+	letter-spacing:1px;
+	height:36px;
+	width:100px;
+	display:block;
+	float:right;
+	margin-top:-29px;
+	margin-right:-1px;
+	background-color:#3385FF;
+	border:0px;
+	color:#FFF;
+}
+#div-two{
+	width:720px; height:45px; padding-top:200px; margin:0 auto; text-align:center;
+}
+.bottom-p{
+	color:#00C;
+	font-family:Arial;
+	font-size:12px;
+	width:720px;
+	height:15px;
+}
+.bottom-p a{
+	padding:0 6px;
+}
+.btm-a{
+	color:#777;
+}
+#logo-in{
+	width:390px;
+	height:450px;
+	z-index:1000;
+	position:fixed;
+	left:50%;
+	margin-left:-195px;
+	top:50%;
+	margin-top:-225px;
+	background-color:#FFF;
+	display:none;
+}
+#close-div{
+	float:right;
+	width:20px;
+	height:20px;
+	margin-top:15px;
+	margin-right:8px;
+	background-image:url(../images/XX.png);
+	background-size:20px 20px;
+}
+#kebiao{
+	width: 80px;
+	height: 50px;
+	position:fixed;
+	bottom:10px;
+	left:10px;
+}
+#kebiao p a{
+	color:#666;
+}
