@@ -1,0 +1,809 @@
+/* 站牌的背景颜色 */
+/* 站牌的宽度 */
+/* 站牌的高度 */
+/* 站牌边框的宽度 */
+/* 站牌边框的颜色 */
+/* 顶部div内边距 */
+/*中号字体大小 */
+/*大字号字体 */
+/* 字体颜色（白色）*/
+/* 字体颜色（黑色）*/
+/* 尖头-矩形－宽度 */
+/* 尖头-矩形－高度 */
+/* 小剪头外span的宽度 */
+/* 小箭头外span的高度*/
+/* 小剪头外span的宽度 */
+/* 小箭头外span的高度*/
+/* 设置尖头的宽度属性（大） */
+/* 匹配模式-设置三角形的直角部分（大） */
+/* 居中 */
+.contante {
+  width: 800px;
+  height: 400px;
+  margin: 50px auto;
+}
+/*初始化设置*/
+.con {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  background-color: #FFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  border: 4px solid #3385ff;
+}
+.con-one {
+  width: 800px;
+  height: 400px;
+  position: absolute;
+  background-color: #FFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  border: 4px solid #3385ff;
+}
+/* 顶部 背景色及大小 */
+.con-top {
+  height: 160px;
+  padding: 20px;
+  background-color: #3385ff;
+}
+/* span的公共属性 */
+.span_con {
+  float: left;
+  display: block;
+  height: 100%;
+  color: #FFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+/* 顶部－－左边部分 闵行27 */
+.span-left {
+  float: left;
+  display: block;
+  height: 100%;
+  color: #FFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  text-align: center;
+  width: 127.40740741px;
+}
+.span-left h1 {
+  font-size: 80px;
+  line-height: 8px;
+}
+.span-left h2 {
+  background-color: #FF9B00;
+  height: 32px;
+  font-size: 20px;
+  line-height: 32px;
+}
+/* 顶部－－中间部分 地铁站到伟业路 首末班车 票价等信息 */
+.span-mid {
+  float: left;
+  display: block;
+  height: 100%;
+  color: #FFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  padding: 0 22px 0 22px;
+  width: 444.44444444px;
+}
+.mind_goto {
+  height: 50%;
+}
+.mind_goto p {
+  height: 100%;
+  line-height: 40px;
+  font-size: 20px;
+  color: #FFF;
+  position: relative;
+}
+.goto-right {
+  float: right;
+}
+.go-right-top {
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  margin-left: 200px;
+  margin-top: -23px;
+}
+.go-right-top .go-width-top {
+  width: 70px;
+  height: 3px;
+  display: block;
+  background-color: #FFF;
+}
+.go-right-top .go-triangle-top {
+  float: right;
+  border-width: 6px;
+  margin-top: -12px;
+  margin-right: -3px;
+  border-color: transparent transparent #FFF #FFF;
+  border-style: dashed dashed solid solid;
+}
+.go-right-bottom {
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  margin-left: 200px;
+  margin-top: -20px;
+}
+.go-right-bottom .go-width-bottom {
+  width: 70px;
+  height: 3px;
+  display: block;
+  background-color: #FFF;
+}
+.go-right-bottom .go-triangle-bottom {
+  float: right;
+  border-width: 6px;
+  margin-top: -3px;
+  margin-right: -3px;
+  border-color: #FFF transparent transparent #FFF;
+  border-style: solid dashed dashed solid;
+}
+/*  大三角公共的span 尖头有两个单项的尖头组成 */
+.go-right {
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  display: block;
+  margin-left: 200px;
+}
+/* 首末班车 ~ 票价 */
+.shu-bus span {
+  font-size: 18px;
+  line-height: 27px;
+}
+.shu-bus .price-two {
+  margin-left: 18px;
+}
+/* 顶部－－右边部分 */
+.span-right {
+  float: left;
+  display: block;
+  height: 100%;
+  color: #FFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  padding: 10px;
+  width: 177.77777778px;
+}
+/* 返程 */
+.goto-return {
+  height: 50%;
+}
+.goto-return p {
+  float: right;
+  width: 103.7037037px;
+  height: 40px;
+  border: 3px solid #FFF;
+  padding: 10px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.goto-return p span {
+  font-size: 18px;
+  line-height: 17px;
+}
+/* 小箭头外span */
+.span-triangle {
+  width: 30px;
+  height: 15px;
+  display: block;
+  position: absolute;
+}
+/* 顶部右边向右尖头 */
+.go-right-right {
+  width: 30px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.go-right-right .go-width-right {
+  width: 30px;
+  height: 3px;
+  display: block;
+  background-color: #FFF;
+}
+.go-right-right .go-triangle-right {
+  float: right;
+  border-width: 4px;
+  margin-top: -8px;
+  margin-right: -3px;
+  border-color: transparent transparent #FFF #FFF;
+  border-style: dashed dashed solid solid;
+}
+/* 顶部右边向左尖头 */
+.go-right-left {
+  width: 30px;
+  height: 15px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 4.5px;
+}
+.go-right-left .go-width-left {
+  width: 30px;
+  height: 3px;
+  display: block;
+  background-color: #FFF;
+}
+.go-right-left .go-triangle-left {
+  float: left;
+  border-width: 4px;
+  margin-top: -2.4px;
+  margin-left: -2.6px;
+  border-color: #FFF #FFF transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+.fancheng {
+  float: right;
+  padding-left: 5px;
+}
+/* 在地图中显示 */
+.goto-for-map p {
+  float: right;
+  line-height: 72px;
+  padding-right: 9px;
+}
+.goto-for-map p a {
+  font-size: 21.6px;
+  color: #FFF;
+}
+.con-bottom {
+  height: 150.94339623px;
+  padding: 10px 20px 20px 20px;
+}
+.span-triangle-s {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.con-bottom-ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.con-bottom-ul li {
+  list-style: none;
+  float: left;
+  width: 18px;
+  padding: 5px;
+}
+.con-bottom-ul li a {
+  text-decoration: none;
+  text-align: center;
+  line-height: 21.6px;
+  color: #000;
+}
+.con-bottom-ul li a div {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+.li1-span-top {
+  /* 第1个箭头 */
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li1-span-top .li1-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li1-span-top .li1-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li1-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li1-span-bom .li1-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li1-span-bom .li1-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第2个箭头 */
+.li2-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li2-span-top .li2-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li2-span-top .li2-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li2-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li2-span-bom .li2-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li2-span-bom .li2-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第3个箭头 */
+.li3-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li3-span-top .li3-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li3-span-top .li3-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li3-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li3-span-bom .li3-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li3-span-bom .li3-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第4个箭头 */
+.li4-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li4-span-top .li4-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li4-span-top .li4-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li4-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li4-span-bom .li4-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li4-span-bom .li4-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第5个箭头 */
+.li5-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li5-span-top .li5-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li5-span-top .li5-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li5-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li5-span-bom .li5-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li5-span-bom .li5-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第6个箭头 */
+.li6-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li6-span-top .li6-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li6-span-top .li6-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li6-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li6-span-bom .li6-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li6-span-bom .li6-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第7个箭头 */
+.li7-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li7-span-top .li7-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li7-span-top .li7-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li7-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li7-span-bom .li7-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li7-span-bom .li7-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第8个箭头 */
+.li8-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li8-span-top .li8-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li8-span-top .li8-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li8-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li8-span-bom .li8-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li8-span-bom .li8-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第9个箭头 */
+.li9-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li9-span-top .li9-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li9-span-top .li9-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li9-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li9-span-bom .li9-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li9-span-bom .li9-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第10个箭头 */
+.li10-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li10-span-top .li10-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li10-span-top .li10-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li10-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li10-span-bom .li10-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li10-span-bom .li10-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 第11个箭头 */
+.li11-span-top {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+}
+.li11-span-top .li11-em-top {
+  margin-top: 7px;
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li11-span-top .li11-i-top {
+  float: right;
+  border-width: 3px;
+  margin-top: -6px;
+  margin-right: -2.25px;
+  border-color: transparent transparent #000 #000;
+  border-style: dashed dashed solid solid;
+}
+.li11-span-bom {
+  width: 18px;
+  height: 9px;
+  display: block;
+  position: absolute;
+  float: left;
+  padding-top: 12px;
+}
+.li11-span-bom .li11-em-bom {
+  width: 18px;
+  height: 1.5px;
+  display: block;
+  background-color: #000;
+}
+.li11-span-bom .li11-i-bom {
+  float: left;
+  border-width: 3px;
+  margin-top: -1.8px;
+  margin-left: -1.95px;
+  border-color: #000 #000 transparent transparent;
+  border-style: solid solid dashed dashed ;
+}
+/* 三个小点 */
+.diandiandian {
+  font-size: 36px;
+  height: 7px;
+  line-height: 7px;
+  display: block;
+  font-style: normal;
+  -webkit-transform: scale(0.6);
+  margin-top: -6px;
+}

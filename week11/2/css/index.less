@@ -1,0 +1,558 @@
+@bg-co:#FFF;/* 站牌的背景颜色 */
+@con_width:800px;/* 站牌的宽度 */
+@con_height:400px;/* 站牌的高度 */
+@con_border_width:4px;/* 站牌边框的宽度 */
+@con_border_corlor:#3385ff;/* 站牌边框的颜色 */
+@con_padding:20px;/* 顶部div内边距 */
+@font_size:18px;/*中号字体大小 */
+@bigest_size:80px;/*大字号字体 */
+@font_white:#FFF;/* 字体颜色（白色）*/
+@font_block:#000;/* 字体颜色（黑色）*/
+@go_width-big:70px;/* 尖头-矩形－宽度 */
+@go_height-big:3px;/* 尖头-矩形－高度 */
+@span-width-triangle:30px;/* 小剪头外span的宽度 */
+@span-height-triangle:15px;/* 小箭头外span的高度*/
+@con-width-triangle:30px;/* 小剪头外span的宽度 */
+@con-height-triangle:3px;/* 小箭头外span的高度*/
+
+/* 设置尖头的宽度属性（大） */
+.go_length(bai,@w:@go_width-big,@h:@go_height-big,@c:@font_white){
+	width:@w;
+	height:@h;
+	display:block;
+	background-color:@c;
+}
+.go_length(hei,@w:@go_width-big,@h:@go_height-big,@c:@font_block){
+	width:@w;
+	height:@h;
+	display:block;
+	background-color:@c;
+}
+
+/* 匹配模式-设置三角形的直角部分（大） */
+.triangle(top,@w:@go_height-big,@c:@font_white){
+	float:right;
+	border-width:@w*2;
+	margin-top:-@w*4;
+	margin-right:-@w;
+	border-color:transparent transparent @c @c;
+	border-style: dashed dashed solid solid;
+}
+.triangle(bottom,@w:@go_height-big,@c:@font_white){
+	float:right;
+	border-width:@w*2;
+	margin-top:-@w;
+	margin-right:-@w;
+	border-color:@c transparent transparent @c;
+	border-style: solid dashed dashed solid;
+}
+
+.triangle(topleft,@w:@go_height-big,@c:@font_white){
+	float:left;
+	border-width:@w*2;
+	margin-top:-@w*4;
+	margin-left:-@w*3;
+	border-color:transparent @c @c transparent;
+	border-style: dashed solid solid dashed ;
+}
+.triangle(bottomleft,@w:@go_height-big,@c:@font_white){
+	float:left;
+	border-width:@w*2;
+	margin-top:-@w;
+	margin-left:-@w*3;
+	border-color:@c @c transparent transparent;
+	border-style: solid dashed dashed solid;
+}
+
+.triangle(right,@w:@go_height-big,@c:@font_white){
+	float:right;
+	border-width:@w*2;
+	margin-top:-@w*4;
+	margin-right:-@w*1.5;
+	border-color:transparent transparent @c @c;
+	border-style: dashed dashed solid solid;
+}
+.triangle(left,@w:@go_height-big,@c:@font_white){
+	float:left;
+	border-width:@w*2;
+	margin-top:-@w*1.2;
+	margin-left:-@w*1.3;
+	border-color:@c @c transparent transparent ;
+	border-style: solid solid dashed dashed ;
+}
+
+/* 居中 */
+.contante{
+	width:@con_width;
+	height:@con_height;
+	margin:50px auto;
+}
+/*初始化设置*/
+.con{
+	width:@con_width;
+	height:@con_height;
+	position: absolute;
+	background-color:@bg-co;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	border:@con_border_width solid @con_border_corlor;
+}
+.con-one{
+	.con;
+}
+
+/* 顶部 背景色及大小 */
+.con-top{
+	height:@con_height/2.5;
+	padding:@con_padding;
+	background-color:@con_border_corlor;
+}
+/* span的公共属性 */
+.span_con{
+	float:left;
+	display:block;
+	height:100%;
+	color:@font_white;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+}
+/* 顶部－－左边部分 闵行27 */
+.span-left{
+	.span_con;
+	text-align:center;
+
+	width:(@con_width*4.3)/27;
+	h1{
+		font-size:@bigest_size;
+		line-height: @bigest_size/10;
+	}
+	h2{
+		background-color:#FF9B00;
+		height: @bigest_size/2.5;
+		font-size:@bigest_size/4;
+		line-height: @bigest_size/2.5;
+	}
+}
+/* 顶部－－中间部分 地铁站到伟业路 首末班车 票价等信息 */
+.span-mid{
+	.span_con;
+	padding:0 22px 0 22px;
+	width:(@con_width*15)/27;
+}
+.mind_goto{
+	height:50%;
+	p{
+		height:100%;
+		line-height:@bigest_size/2;
+		font-size:@bigest_size/4;
+		color:@font_white;
+		position:relative;
+	}
+}
+.goto-right{
+	float:right;
+}
+.go-right-top{
+	.go-right(top);
+	.go-width-top{
+		.go_length(bai);
+	}
+	.go-triangle-top{
+		.triangle(top);
+	}
+}
+.go-right-bottom{
+	.go-right(bottom);
+	.go-width-bottom{
+		.go_length(bai);
+	}
+	.go-triangle-bottom{
+		.triangle(bottom);
+	}
+}
+
+/*  大三角公共的span 尖头有两个单项的尖头组成 */
+.go-right{
+	width:@go_width-big;
+	height:@go_height-big;
+	position: absolute;
+	display:block;
+	margin-left: 200px;
+}
+.go-right(top,@t:23px){
+	.go-right;
+	margin-top:-@t;
+}
+.go-right(bottom,@t:20px){
+	.go-right;
+	margin-top:-@t;
+}
+/* 首末班车 ~ 票价 */
+.shu-bus{
+	span{
+		font-size:@font_size;
+		line-height:(@font_size*3)/2;
+	}
+	.price-two{
+		margin-left:@font_size;
+	}
+}
+
+/* 顶部－－右边部分 */
+.span-right{
+	.span_con;
+	padding:10px;
+	width:(@con_width*6)/27;
+}
+
+/* 返程 */
+.goto-return{
+	height:50%;
+	p{
+		float:right;
+		width:(@con_width*3.5)/27;
+		height:40px;
+		border:3px solid @font_white;
+		padding:10px;
+		box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-o-box-sizing:border-box;
+		span{
+			font-size:@font_size;
+			line-height:17px;
+		}
+	}
+}
+/* 小箭头外span */
+.span-triangle{
+	width:@span-width-triangle;
+	height:@span-height-triangle;
+	display:block;
+	position: absolute;
+}
+/* 顶部右边向右尖头 */
+.go-right-right{
+	.span-triangle;
+	float:left;
+	.go-width-right{
+		.go_length(bai,@con-width-triangle,@con-height-triangle);
+	}
+	.go-triangle-right{
+		.triangle(right,@con-height-triangle/1.5);
+	}
+}
+/* 顶部右边向左尖头 */
+.go-right-left{
+	.span-triangle;
+	float:left;
+	padding-top:@con-height-triangle*1.5;
+	.go-width-left{
+		.go_length(bai,@con-width-triangle,@con-height-triangle);
+	}
+	.go-triangle-left{
+		.triangle(left,@con-height-triangle/1.5);
+	}
+}
+.fancheng{
+	float:right;
+	padding-left:5px;
+}
+/* 在地图中显示 */
+.goto-for-map{
+	p{
+		float:right;
+		line-height:@font_size*4;
+		padding-right:@font_size*0.5;
+		a{
+			font-size:@font_size*1.2;
+			color:@font_white;
+		}
+	}
+}
+
+.con-bottom{
+	height:@con_height/2.65;
+	padding:@con_padding*0.5 @con_padding @con_padding @con_padding;
+}
+
+.span-triangle-s{
+	width:@font_size;
+	height:@font_size/2;
+	display:block;
+	position: absolute;
+	float:left;
+}
+.con-bottom-ul{
+	margin:0;
+	padding:0;
+	overflow:hidden;
+	li{
+		list-style:none;
+		float:left;
+		width:@font_size;
+		padding:5px;
+		a{
+			text-decoration: none;
+			text-align:center;
+			line-height:@font_size*1.2;
+			color:@font_block;
+			div{
+				width:@font_size;
+				height:@font_size;
+				display:block;
+			}
+		}
+	}
+}
+.li1-span-top{/* 第1个箭头 */ 
+	.span-triangle-s;
+	.li1-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li1-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li1-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li1-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li1-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+
+/* 第2个箭头 */ 
+.li2-span-top{
+	.span-triangle-s;
+	.li2-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li2-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li2-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li2-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li2-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+
+/* 第3个箭头 */
+.li3-span-top{ 
+	.span-triangle-s;
+	.li3-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li3-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li3-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li3-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li3-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+/* 第4个箭头 */
+.li4-span-top{ 
+	.span-triangle-s;
+	.li4-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li4-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li4-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li4-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li4-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+/* 第5个箭头 */
+.li5-span-top{ 
+	.span-triangle-s;
+	.li5-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li5-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li5-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li5-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li5-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+/* 第6个箭头 */
+.li6-span-top{ 
+	.span-triangle-s;
+	.li6-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li6-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li6-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li6-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li6-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+
+/* 第7个箭头 */
+.li7-span-top{ 
+	.span-triangle-s;
+	.li7-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li7-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li7-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li7-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li7-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+
+/* 第8个箭头 */
+.li8-span-top{ 
+	.span-triangle-s;
+	.li8-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li8-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li8-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li8-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li8-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+
+/* 第9个箭头 */
+.li9-span-top{ 
+	.span-triangle-s;
+	.li9-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li9-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li9-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li9-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li9-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+
+/* 第10个箭头 */
+.li10-span-top{ 
+	.span-triangle-s;
+	.li10-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li10-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li10-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li10-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li10-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+
+/* 第11个箭头 */
+.li11-span-top{ 
+	.span-triangle-s;
+	.li11-em-top{
+		margin-top:7px;
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li11-i-top{
+		.triangle(right,@con-height-triangle/2,@font_block);
+	}
+}
+.li11-span-bom{
+	.span-triangle-s;
+	padding-top:(@font_size*2)/3;
+	.li11-em-bom{
+		.go_length(hei,@font_size,@con-height-triangle/2);
+	};
+	.li11-i-bom{
+		.triangle(left,@con-height-triangle/2,@font_block);
+	}
+}
+/* 三个小点 */
+.diandiandian{
+	font-size:@font_size*2;
+	height:7px;
+	line-height:7px;
+	display:block;
+	font-style:normal;
+	-webkit-transform:scale(0.6);
+	margin-top:-@font_size/3
+}
