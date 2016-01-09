@@ -1,0 +1,15 @@
+.top-title-p{
+    width: 100%;
+    height: auto;
+    color: #FFF;
+    background-color: #804284;
+    font-size: 80px;
+    text-align: center;
+}
+.content-web p{
+    font-size: 18px;
+    color: #333;
+    text-indent: 2rem;
+    padding-left: 20px;
+    background-color: #F0F0ed;
+}

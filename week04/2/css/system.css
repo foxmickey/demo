@@ -1,0 +1,289 @@
+/*[class*=col-]{
+    background: #CCC;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #aaa;
+}*/
+html,body{
+    height: 100%;
+    width: 100%;
+}
+/*整体布局*/
+.system{
+    height: 100%;
+    min-height: 700px;
+    min-width: 1200px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.sys-logo-div{
+    height:80px;
+    padding: 0;
+    background-color: #1ca794;
+}
+.sys-body{
+    padding: 0;
+}
+.sys-body-menu{
+    min-width: 200px;
+    padding: 0;
+}
+.sys-menu-set{
+    height: 100%;
+    padding: 0;
+    background-color: #1fbba6;
+}
+.sys-menu-list{
+    height: 100%;
+    padding: 0;
+    background-color: #ebebeb;
+}
+.sys-details{
+    height: 100%;
+    min-width: 520px;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.sys-menu-boo{
+    padding-bottom: 9999px;
+    margin-bottom: 9999px;
+}
+/*整体布局结束*/
+/*顶部开始*/
+.sys-logo-ul-li{
+    height: 80px;
+    padding: 0;
+    list-style: none;
+}
+.sys-head-logo{
+    height: 80px;
+    color: #FFF;
+    line-height: 80px;
+    font-size: 50px;
+    display: inline-block;
+}
+.sys-head-logo:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+.sys-logo-small{
+    font-size: 30px;
+}
+.sys-head-middle{
+    width: 100%;
+    float: right;
+}
+.sys-head-middle a{
+    float: right;
+    color: #FFF;
+    font-size: 28px;
+    padding-right: 20px;
+}
+.sys-head-middle a:hover{
+    text-decoration: none;
+}
+.sys-head-task-li{
+    height: 40px;
+    display: inline-block;
+    float: right;
+    margin-left: 10px;
+    padding-right: 20px;
+}
+.sys-head-task li a{
+    color: #FFF;
+    font-size: 14px;
+}
+.sys-head-task li a:hover{
+    text-decoration: none;
+}
+.li-source{
+    text-align: center;
+    background: url(../images/sign_out.png) #028e7b no-repeat;
+    background-size: auto 40px;
+    background-position: 37px 7px;
+}
+.sys-head-source{
+    color: #FFF;
+    height: 80px;
+    font-size: 18px;
+    line-height: 125px;
+    display: inline-block;
+}
+.sys-head-source:hover{
+    color: #FFF;
+    text-decoration: none;
+}
+/*顶部结束*/
+
+/*主体部分开始*/
+
+/*左边设置*/
+
+
+
+
+
+
+.sys-menu-ul{
+    padding: 50px 0 0 0;
+}
+.sys-menu-ul li{
+    width: 100%;
+    padding-top: 30px;
+    list-style: none;
+    text-align: center;
+}
+.sys-menu-ul li a{
+    width: 100%;
+    height: 50px;
+    display: block;
+}
+#sys-menu-set-a-1{
+    background: url(../images/set.png) #1fbba6 center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -486px;
+}
+#sys-menu-set-a-1:hover{
+    background: url(../images/set.png) #FFF center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -428px;
+}
+#sys-menu-set-a-2{
+    background: url(../images/set.png) #1fbba6 center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -370px;
+}
+#sys-menu-set-a-2:hover{
+    background: url(../images/set.png) #FFF center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -314px;
+}
+#sys-menu-set-a-3{
+    background: url(../images/set.png) #1fbba6 center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -257px;
+}
+#sys-menu-set-a-3:hover{
+    background: url(../images/set.png) #FFF center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -199px;
+}
+#sys-menu-set-a-4{
+    background: url(../images/set.png) #1fbba6 center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -148px;
+}
+#sys-menu-set-a-4:hover{
+    background: url(../images/set.png) #FFF center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -96px;
+}
+#sys-menu-set-a-5{
+    background: url(../images/set.png) #1fbba6 center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% -43px;
+}
+#sys-menu-set-a-5:hover{
+    background: url(../images/set.png) #FFF center no-repeat;
+    background-size: 30px auto;
+    background-position: 50% 6px;
+}
+/*功能菜单列表*/
+.menu-boo-p{
+    font-size: 20px;
+    padding-top: 15px;
+    padding-left: 10%;
+}
+.menu-boo-line{
+    width: 80%;
+    height: 1px;
+    background-color: #111;
+    display: block;
+    margin-left: 10%;
+}
+/*一级功能菜单*/
+.sys-menu-far{
+    padding: 0;
+}
+.sys-menu-far-li{
+    width: 100%;
+    list-style: none;
+}
+.sys-menu-far-li-a{
+    width: 100%;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 15%;
+    display: block;
+    color: #444;
+    font-size: 16px;
+    background-color: #CCC;
+}
+.sys-menu-far-li a:hover{
+    text-decoration: none;
+    background-color: #999;
+}
+/*二级功能菜单*/
+.menu-far-ul-temporary{
+    width: 100%;
+    padding: 0;
+}
+.menu-far-temporary{
+    width: 100%;
+    list-style: none;
+}
+.menu-far-temporary a{
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    display: block;
+    color: #444;
+    padding-left: 25%;
+}
+/*主体表格部分*/
+.menu-boo-merchant{
+    padding: 30px;
+}
+.menu-boo-andtoo{
+    float: right;
+    cursor: pointer;
+    background-color: #F00;
+}
+.menu-merchant-table{
+    text-align: center;
+}
+.merchant-thead-tr th a{
+    text-align: center;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.merchant-thead-tr th a:hover{
+    text-decoration: none;
+}
+.table-hover:hover{
+    background-color: #dabbbb;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

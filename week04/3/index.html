@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0;" name="viewport"> -->
+<title>康棒棒--3期3班--百度响应式</title>
+<meta name="keywords" content="搜索 极客学院 康棒棒 3期3班">
+<meta name="description" content="这是极客学院大web就业班3期3班康棒棒的第四周的作业">
+<link href="images/bangfavicon34.ico" rel="shortcut icon">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 1000px)" href="css/pc.css">
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 1001px)" href="css/app.css">
+<script type="text/javascript" src="js/pc.js"></script>
+<!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- pc端页面 -->
+    <div class="pc">
+        <!-- 登录界面 -->
+            <div id="logo-in">
+                <div id="logo-in-top">
+                    <span>
+                        <img src="images/du.png" class="top-img-left">
+                        <a>登陆百度账号</a>
+                    </span>
+                    <span>
+                        <img src="images/XX.png" onclick="openLogoin()" class="top-img-right">
+                    </span>
+                </div>
+                <div id="logo-name-password">
+                    <p class="main-p content-new"><a>短信快捷登陆</a></p>
+                    <p class="main-p content-name" id="content-name"><a class="con-name-img"></a><input class="name-input" onfocus="nameOne()" onblur="nameTwo()" on autocomplete="off" type="text" placeholder="手机/邮箱/用户名"></p>
+                    <p class="main-p content-password" id="content-password"><a class="con-pass-img"></a><input class="pass-input" type="text" onfocus="passOne()" onblur="passTwo()" on autocomplete="off" placeholder="密码"></p>
+                    <p class="main-p content-zidong">
+                        <input type="checkbox" class="con-checkbox">
+                        <a class="zidong-a">下次自动登陆</a>
+                        <a class="zidong-w">忘记密码？</a>
+                    </p>
+                    <p class="main-p content-logoin"><a class="con-logoin-a">登陆</a></p>
+                    <p class="main-p content-zhuce"><a class="con-zhuce">立即注册</a></p>
+                </div>
+                <div><p class="logo-foot-P">可以使用以下方式登陆</p></div>
+                <div><p><span><img src="images/qq.jpg" title="使用QQ账号登陆" class="footing-qq"></span><span><img src="images/xinlang.jpg" title="使用新浪账号登陆" class="footing-xinlang"></span></p></div>
+            </div>
+            <!-- 主体部分开始 -->
+            <div class="subject"><!-- 右上角菜单 -->
+                <header class="top">
+                    <ul class="menu">
+                        <li><a href="http://news.baidu.com/" title="查看国内大事件">新闻</a></li>
+                        <li><a id="li-2" href="http://www.hao123.com/" title="跳转到hao123首页">hao123</a></li>
+                        <li><a href="http://map.baidu.com/" title="点击查看地图">地图</a></li>
+                        <li><a href="http://v.baidu.com/?fr=bd" title="百度视频 更加精彩">视频</a></li>
+                        <li><a href="http://tieba.baidu.com/" title="百度贴吧 中国最大的贴吧">贴吧</a></li>
+                        <li><a id="li-6" title="登录您的帐号" onClick="show()">登录</a></li>
+                        <li class="li-set">
+                            <a id="li-7" href="" title="设置">设置</a>
+                            <ul class="set-menu">
+                                <li><a href="">搜索设置</a></li>
+                                <li><a href="">高级搜索</a></li>
+                                <li><a href="">关闭预测</a></li>
+                                <li><a href="">搜索历史</a></li>
+                            </ul>
+                        </li>
+                        <li class="li-pro">
+                            <a id="li-8" href="" title="查看更多产品信息">更多产品</a>
+                            <ul class="many-product">
+                                <p class="many-p">更多产品</p>
+                                <li id="many-li-1"><a><span id="nuomi"></span>糯米</a></li>
+                                <li><a><span id="zhidao"></span>知道</a></li>
+                                <li><a><span id="music"></span>音乐</a></li>
+                                <li><a><span id="photos"></span>图片</a></li>
+                                <li><a><span id="wenku"></span>文库</a></li>
+                                <li><a><span id="fengyun"></span>风云榜</a></li>
+                                <li><a><span id="tuiguang"></span>百度推广</a></li>
+                                <li><a>全部产品</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </header>
+                <div></div>
+                <div class="logo"><!-- 中间inout及logo -->
+                        <span>
+                            <img id="logo-img" width="270" height="129" title="百度搜索" alt="百度logo" src="images/bd_logo.png"> 
+                        </span>
+                        <form id="form-two" onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank">
+                            <span id="con-span">
+                                <input id="two-input" class="s-input" type="text" name=word onfocus="bianse()" onblur="quse()"autocomplete="off">
+                                <input type="submit" value="百度一下" id="word">
+                            </span> 
+                        </form>  
+                </div>
+                <footer class="footing"><!-- 底部版权 -->
+                    <span class="bottom-p">
+                        <a href="https://www.baidu.com/cache/sethelp/help.html" rel="nofollow" title="百度首页">把百度设为首页</a>
+                        <a title="关于百度" href="http://home.baidu.com/" rel="nofollow">关于百度</a>
+                        <a href="http://ir.baidu.com/phoenix.zhtml?c=188488&p=irol-homeprofile" rel="nofollow" title="About Baidu">About Baidu</a>
+                    </span>
+                    <span class="footing-time">©&nbsp;2015&nbsp;Baidu&nbsp;
+                        <a class="btm-a" href="http://www.baidu.com/duty/" rel="nofollow" title="使用百度前必读">使用百度前必读</a>&nbsp;
+                        <a class="btm-a" href="http://jianyi.baidu.com/" rel="nofollow" title="意见反馈">意见反馈</a>&nbsp;京icp证030173号
+                    </span>
+                </footer>
+            </div>
+         <!-- 主体部分结束 -->
+    </div>
+<!-- 手机端页面 -->
+    <div class="orpc">
+        <div class="container col-xs-12 col-sm-12 col-md-12">
+            <div class="row top-weather-logoin col-xs-12 col-sm-12">
+                <div class="col-xs-6">
+                    <p>
+                        25°<span></span><small>上海</small>
+                    </p>
+                </div>
+                <div class="col-xs-6">
+                    <a class="logoin-bg-img"></a>
+                </div>
+            </div>
+            <div class="row col-xs-12 bd_logo-div">
+                <img src="images/bd_logo.png" />
+            </div>
+            <div class="row col-xs-12 input-text-submit">
+                <input type="text"/>
+                <input type="submit" value="百度一下" />
+            </div>
+            <br>
+            <br>
+            <div class="row nav col-xs-12 body-div-title" id="body-div-bga">
+                <ul class="nav">
+                    <li class="col-xs-2"><a id="bga-new" href="">新闻</a></li>
+                    <li class="col-xs-2"><a id="bga-novel" href="">小说</a></li>
+                    <li class="col-xs-2"><a id="bga-video" href="">视频</a></li>
+                    <li class="col-xs-2"><a id="bga-life" href="">生活</a></li>
+                    <li class="col-xs-2"><a id="bga-map" href="">地图</a></li>
+                    <li class="col-xs-2"><a id="bga-many" href="">更多</a></li>
+                </ul>
+            </div>
+            <div class="row common-website" id="common-website">
+                    <p class="common-website-p">常用网址</p>
+                    <ul class="nav">
+                        <li class="col-xs-3"><a id="tie" href="">贴吧</a></li>
+                        <li class="col-xs-3"><a id="hao" href="">hao123</a></li>
+                        <li class="col-xs-3"><a id="map" href="">地图</a></li>
+                        <li class="col-xs-3"><a id="vip" href="">百度VIP</a></li>
+
+                        <li class="col-xs-3"><a id="photo" href="">图片</a></li>
+                        <li class="col-xs-3"><a id="musics" href="">音乐</a></li>
+                        <li class="col-xs-3"><a id="nuo" href="">糯米</a></li>
+                        <li class="col-xs-3"><a id="and" href="">＋</a></li>
+                    </ul>
+            </div>
+            <div class="row col-xs-12" id="real-time">
+                <p class="common-website-p">实时热点</p>
+                <ul class="nav">
+                    <li class="col-xs-6"><a id="huanbao" href="">环抱女儿男友拍照<span class="badge huanbao">new</span></a></li>
+                    <li class="col-xs-6"><a id="xiaoqu" href="">小区半夜收开门费<span class="badge xiaoqu">new</span></a></li>
+                    <li class="col-xs-6"><a id="huang" href="">黄晓明上新闻联播</a></li>
+                    <li class="col-xs-6"><a id="jiqi" href="">机器人巧答总理问</a></li>
+                    <li class="col-xs-6"><a id="masha" href="">玛莎拉蒂奥迪相撞</a></li>
+                    <li class="col-xs-6"><a id="ench" href="">中英百亿英镑大单</a></li>
+                </ul>
+            </div>
+            <div class="row" id="life-service">
+                <p class="common-website-p">生活服务</p>
+                <p>
+                    <a>点击定位，查看附近位置信息</a>
+                </p>
+                <ul class="nav">
+                    <li class="col-xs-3 life-server-1"><a class="life-server-a-1" id="film" href="">电影</a></li>
+                    <li class="col-xs-3 life-server-2"><a class="life-server-a-2" id="tuan" href="">团购</a></li>
+                    <li class="col-xs-3 life-server-3"><a class="life-server-a-3" id="waimai" href="">外卖</a></li>
+                    <li class="col-xs-3 life-server-4"><a class="life-server-a-4" id="taxi" href="">打车</a></li>
+                    <li class="col-xs-3 life-server-5"><a class="life-server-a-5" id="hotel" href="">酒店</a></li>
+                    <li class="col-xs-3 life-server-6"><a class="life-server-a-6" id="cate" href="">美食</a></li>
+                    <li class="col-xs-3 life-server-7"><a class="life-server-a-7" id="KTV" href="">KTV</a></li>
+                    <li class="col-xs-3 life-server-8"><a class="life-server-a-8" id="bank" href="">银行</a></li>
+                    <li class="col-xs-3 life-server-9"><a class="life-server-a-9" id="feiji" href="">飞机票</a></li>
+                    <li class="col-xs-3 life-server-10"><a class="life-server-a-10" id="train" href="">火车票</a></li>
+                    <li class="col-xs-3 life-server-11"><a class="life-server-a-11" id="car" href="">汽车票</a></li>
+                    <li class="col-xs-3 life-server-12"><a class="life-server-a-12" id="bus" href="">公交站</a></li>
+                    <li class="col-xs-3 life-server-13"><a class="life-server-a-13" id="tourism" href="">旅游</a></li>
+                    <li class="col-xs-3 life-server-14"><a class="life-server-a-14" id="doctor" href="">就诊</a></li>
+                </ul>
+            </div>
+            <div class="row col-xs-12" id="footer-p">
+                <p >管理我的首页</p>
+            </div>
+            <div class="row col-xs-12" id="footer-bei">
+                <p>使用百度前必读Baidu京ICP证030173</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

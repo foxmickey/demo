@@ -1,0 +1,130 @@
+html,body{
+	width: 100%;
+	height: 100%;
+}
+/*主体*/
+.container{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	background-color: #52b0d3;
+}
+/*登陆界面 宽高设置*/
+.con-middle{
+	width: 260px;
+	height: 400px;
+	top: 50%;
+	position: absolute;
+	left: 50%;
+	margin-left:-130px;
+	margin-top: -200px;
+	background-color: #303344;
+	padding: 30px 0 0 0;
+}
+/*登陆头像*/
+.portrait{
+	width: 60px;
+	height: 60px;
+	display: block;
+	border-radius: 50%;
+	margin-left: 100px;
+	background: url(../images/logo-in.png) #CCCCCC no-repeat;
+	background-size: 60px auto;
+}
+/*input整体样式*/
+.logo-input{
+	width: 200px;
+	height: 30px;
+	margin-left: 30px;
+}
+/*input 名字*/
+.logo-in-name{
+	margin-top: 35px;
+	border: 0;
+	border-radius: 2px;
+	padding-left: 30px;
+	font-size: 12px;
+	background: url(../images/input_icon.png) #FFF no-repeat;
+	background-position: 2px -66px;
+}
+/*input 密码*/
+.logo-in-password{
+	margin-top: 10px;
+	border: 0;
+	border-radius: 2px;
+	padding-left: 30px;
+	font-size: 12px;
+	background: url(../images/input_icon.png) #FFF no-repeat;
+	background-position: 2px -146px;
+}
+/*忘记密码*/
+.logo-in-forget{
+	font-size: 12px;
+	color: #2D9442;
+	font-family: "微软雅黑";
+	float: right;
+	margin-top: 10px;
+	margin-right: 30px;
+	cursor: pointer;
+}
+/*登陆按钮*/
+.logo-in-submit{
+	margin-top: 15px;
+	color: #2D9442;
+	border: 1px solid #2D9442;
+	background-color: #303344;
+}
+.logo-in-submit:hover,.logo-in-submit:focus,.logo-in-submit:active{
+	color: #303344;
+	border: 1px solid #303344;
+	background-color: #2D9442;
+}
+/*横线*/
+.line-p{
+	width: 190px;
+	height: 1px;
+	display: block;
+	margin: 30px auto;
+	background-color: #CCC;
+}
+/*横线上的文字*/
+.line-or{
+	font-size: 12px;
+	color: #ccc;
+	text-align: center;
+	margin-top: -38px;
+	margin-left: 50px;
+	height: 20px;
+	width: 160px;
+	display: block;
+	background-color: #303344;
+}
+/*qq 微信 新浪*/
+.logo-in-qq{
+	width: 34px;
+	height: 33px;
+	display:inline-block;
+	background: url(../images/logo-in.png) no-repeat;
+	background-size: 60px auto;
+	background-position: 0 -60px;
+	margin-left: 30px;
+}
+.logo-in-wei{
+	width: 34px;
+	height: 33px;
+	display:inline-block;
+	background: url(../images/logo-in.png) no-repeat;
+	background-size: 60px auto;
+	background-position: 0 -93px;
+	margin-left: 42px;
+}
+.logo-in-xin{
+	width: 34px;
+	height: 34px;
+	display:inline-block;
+	background: url(../images/logo-in.png) no-repeat;
+	background-size: 60px auto;
+	background-position: 0 -127px;
+	float: right;
+	margin-right: 30px;
+}

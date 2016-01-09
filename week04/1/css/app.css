@@ -1,0 +1,251 @@
+/*[class*="col-"]{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #CCC;
+    border:1px solid #F00;
+}*/
+html{-webkit-text-size-adjust: none;}
+*{
+    margin: 0;
+    padding:0;
+}
+html,body{
+    max-width: 720px;
+    min-width: 300px;
+    overflow-x: hidden;
+    margin:0 auto;
+}
+
+/*主体*/
+.container{
+    background-color:#eaf8ff;
+    margin: 0;
+    min-width:300px;
+    max-width:720px;
+}
+.top-logo-img,.top-logo-img div,.top-logo-img div a,.top-logo-img div a p{
+    margin: 0;
+    padding: 0;
+}
+.top-div-logo-name a img{
+    padding-top: 4px;
+}
+.top-logo-img div{
+    padding: 15px 0 12px 0;
+}
+.top-div-imessage img {
+    padding-left: 15px;
+}
+.top-div-call-me img{
+    padding-left: 15px;
+}
+/*移民亲子鉴定*/
+.title-h3-requirment{
+        color: #666666;
+    }
+.con-div-requirement{
+    background-color: #FFF;
+    border:1px solid #CCC;
+}
+.con-p-brief{
+    font-size: 2rem;
+    margin: 25px;
+    text-align: justify;
+    text-indent: 2em;
+    color: #444;
+    letter-spacing: 2px;
+}
+.con-div-brief{
+    background-color: #FFF;
+    border:1px solid #CCC;
+    padding-bottom: 15px;
+}
+.con-p-requirement{
+    font-size: 2rem;
+    margin: 25px;
+    text-align: justify;
+    color: #444;
+}
+.con-p-requirement a{
+    display: block;
+    line-height: 34px;
+    color: #444;
+    text-decoration: none;
+}
+.con-p-requirement a:hover{
+    text-decoration: none;
+}
+/*坚定流程*/
+.imm-con-div-process ul li{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 12px;
+    text-align: center;
+}
+.imm-con-div-process ul li a img{
+    width: 70px;
+    margin: 0 auto;
+}
+.imm-con-div-process ul li a{
+    font-size: 16px;
+    padding: 3px 0 3px 0;
+}
+.imm-con-div-process ul li a:hover{
+    background-color: transparent;
+}
+/*横线*/
+.con-process-p{
+    width: 75%;
+    height: 5px;
+    background-color: #58aedb;
+    display: block;
+    margin-top: 34px;
+    margin-left: 45px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+/*需要提供的证件*/
+.imm-certificates-left{
+    margin-left: 15px;
+}
+.imm-certificates-right{
+    margin-left: 25px;
+}
+.imm-certificates-left img,.imm-certificates-right img{
+    margin: 0 auto;
+}
+.imm-certificates-left p,.imm-certificates-right p{
+    font-size: 2rem;
+    font-family: "微软雅黑";
+    font-weight: 500;
+    text-indent: 2em;
+    text-align: justify;
+    line-height: 30px;
+    color: #FFF;
+    background-color: #58aedb;
+    padding: 15px;
+    display: block;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: -5px;
+}
+/*移民亲子鉴定采样方式*/
+.certificates-bottom-p{
+    width:100%;
+    display:inline-block;
+    background-color: #58aedb;
+    position: relative;
+    margin-top: 30px;
+    padding: 20px;
+    font-size: 22px;
+    font-family:"微软雅黑";
+    color: #FFF;
+}
+/*底部照片*/
+.con-div-consultation{
+    padding-bottom: 80px;
+}
+.con-div-consultation img{
+    margin: 0 auto;
+}
+/*底部导航*/
+.footer-nav-navigation{
+    background-color: #FFF;
+    min-width: 300px;
+    max-width: 720px;
+    margin-left: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.footer-div-navigation ul{
+    text-align:center;
+    margin:0; 
+    padding:0;
+}
+.footer-div-navigation div{
+    margin-left: 0;
+    margin-right: 0;
+}
+.footer-div-navigation ul li{
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-div-navigation ul li a{
+    padding-left: 0;
+    padding-right: 0;
+}
+.footer-div-navigation ul li img{
+    width: 30px;
+    height: 30px;
+}
+.imm-footer-div-navigation{
+    display:block;
+    text-align: center;
+}
+.footing-div-navigation{
+    position: fixed;
+    width: 100%;
+    margin: 0 auto;
+    height: 70px;
+    bottom: 5px;
+/*    padding-bottom: 10px;*/
+    display: inline-block;
+}
+/*当页面处于400和600之间时*/
+@media screen and (min-width: 400px) and (max-width:600px){
+    .imm-con-div-process ul li{
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 10px;
+}
+.imm-con-div-process ul li a img{
+    width: 50px;
+}
+.imm-con-div-process ul li a{
+    font-size: 9px;
+}
+/*横线*/
+.con-process-p{
+    width: 75%;
+    height: 5px;
+    background-color: #58aedb;
+    display: block;
+    margin-top: 25px;
+    margin-left: 45px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+}
+/*字体控制当页面小于400px时*/
+@media only screen and (max-width:400px){
+    /*字体*/
+    .title-h3-requirment{
+        /*font-size: 18px;*/
+    }
+    .imm-certificates-left p,.imm-certificates-right p{
+        font-size: 16px;
+    }
+    .con-p-17-px{
+        font-size: 16px;
+    }
+    /*流程*/
+    .imm-con-div-process ul li{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 8px;
+        }
+    .imm-con-div-process ul li a img{
+        width: 40px;
+    }
+    .imm-con-div-process ul li a{
+        font-size: 5px;
+    }
+    .con-process-p{
+        width: 70%;
+        height: 4px;
+        margin-top: 20px;
+        margin-left: 45px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}

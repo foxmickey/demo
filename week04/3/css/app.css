@@ -1,0 +1,284 @@
+.pc{
+    display: none;
+}
+
+
+
+html,body{
+    min-width: 200px;
+    overflow-x:hidden; 
+}
+
+/*@media screen and (max-width: 400px){
+    .orpc{
+        display: none;
+    }*/
+    a,p{
+    font-size: 1.3rem;
+    color: #444;
+}
+.container{
+    min-width: 310px;
+}
+.container div,.container div ul li,.container div ul li a{
+    padding: 0;
+    margin: 0;
+}
+/*top*/
+.top-weather-logoin div p{
+    font-size: 3rem;
+}
+.top-weather-logoin div p span{
+    width: 30px;
+    height: 35px;
+    display: inline-block;
+    background-color: #F00;
+    background:url(../images/weather.png) no-repeat;
+    background-size: 20px 20px;
+    background-position: 4px 18px;
+    cursor: pointer;
+}
+.top-weather-logoin div p small{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.logoin-bg-img{
+    width: 20px;
+    height: 20px;
+    display:block;
+    float: right;
+    background: url(../images/input_icons_24_915272c4.png) no-repeat;
+    background-position: -4px -70px;
+}
+/*logo*/
+.bd_logo-div{
+    text-align: center;
+}
+.bd_logo-div img{
+    height: 82px;
+}
+/*input*/
+.input-text-submit{
+    width: 100%;
+    height:42px;
+    border:1px solid #ccc;
+    position:relative;
+}
+.input-text-submit input:first-child{
+    border: 0;
+    height: 40px;
+    width: 100%;
+    font-size: 1rem;
+    padding-right:100px;
+    padding-left: 10px;
+    position:relative;
+}
+.input-text-submit input:last-child{
+    float: right;
+    color: #46484b;
+    width: 80px;
+    height: 40px;
+    position: relative;
+    margin-top: -40px;
+}
+/*新闻等*/
+.body-div-title ul{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+/*常用网址*/
+#common-website{
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    border:1px solid #CCC;
+    background-color: #FFF;
+    padding: 15px;
+}
+.common-website-p{
+    font-size: 1.5rem;
+    color: #aaa;
+}
+#common-website ul,#common-website ul li{
+    padding-bottom: 5px;
+    text-align: center;
+}
+/*实时热点*/
+#real-time{
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    border:1px solid #CCC;
+    background-color: #FFF;
+    padding: 15px;
+    margin-top: 20px;
+}
+/*生活服务*/
+#life-service{
+    width: 100%;
+    height: auto;
+    display:inline-block;
+    border:1px solid #CCC;
+    background-color: #FFF;
+    padding: 15px;
+    margin-top: 20px;
+}
+.life-service-location{
+    float: right;
+    width: 80px;
+    height: 35px;
+    display: block;
+    border:1px solid #ccc;
+    text-align: center;
+    line-height: 35px;
+}
+#life-service ul li{
+    text-align:center;
+}
+.life-server-a-1{
+    width: 50px;
+    height: 80px;
+    line-height: 10px;
+    background: url(../images/1.jpg) center center no-repeat;
+}
+.life-server-1 a{
+    line-height: 140px;
+}
+.life-server-a-2{
+    width: 50px;
+    height: 80px;
+    background: url(../images/2.jpg) center center no-repeat;
+}
+.life-server-2 a{
+    line-height: 140px;
+}
+.life-server-a-3{
+    width: 50px;
+    height: 80px;
+    background: url(../images/3.jpg) center center no-repeat;
+}
+.life-server-3 a{
+    line-height: 140px;
+}
+.life-server-a-4{
+    width: 50px;
+    height: 80px;
+    background: url(../images/4.jpg) center center no-repeat;
+}
+.life-server-4 a{
+    line-height: 140px;
+}
+.life-server-a-5{
+    width: 50px;
+    height: 80px;
+    background: url(../images/5.jpg) center center no-repeat;
+}
+.life-server-5 a{
+    line-height: 140px;
+}
+.life-server-a-6{
+    width: 50px;
+    height: 80px;
+    background: url(../images/6.jpg) center center no-repeat;
+}
+.life-server-6 a{
+    line-height: 140px;
+}
+.life-server-a-7{
+    width: 50px;
+    height: 80px;
+    background: url(../images/7.jpg) center center no-repeat;
+}
+.life-server-7 a{
+    line-height: 140px;
+}
+.life-server-a-8{
+    width: 50px;
+    height: 80px;
+    background: url(../images/8.jpg) center center no-repeat;
+}
+.life-server-8 a{
+    line-height: 140px;
+}
+.life-server-a-9{
+    width: 50px;
+    height: 80px;
+    background: url(../images/9.jpg) center center no-repeat;
+}
+.life-server-9 a{
+    line-height: 140px;
+}
+.life-server-a-10{
+    width: 50px;
+    height: 80px;
+    background: url(../images/10.jpg) center center no-repeat;
+}
+.life-server-10 a{
+    line-height: 140px;
+}
+.life-server-a-11{
+    width: 50px;
+    height: 80px;
+    background: url(../images/11.jpg) center center no-repeat;
+}
+.life-server-11 a{
+    line-height: 140px;
+}
+.life-server-a-12{
+    width: 50px;
+    height: 80px;
+    background: url(../images/12.jpg) center center no-repeat;
+}
+.life-server-12 a{
+    line-height: 140px;
+}
+.life-server-a-13{
+    width: 50px;
+    height: 80px;
+    background: url(../images/14.jpg) center center no-repeat;
+}
+.life-server-13 a{
+    line-height: 140px;
+}
+.life-server-a-14{
+    width: 50px;
+    height: 80px;
+    background: url(../images/15.jpg) center center no-repeat;
+}
+.life-server-14 a{
+    line-height: 140px;
+}
+/*底部*/
+#footer-p{
+    margin-top: 20px;
+    padding-top: 10px;
+    border:1px solid #CCC;
+    text-align: center;
+}
+#footer-p p{
+    color: #3385FF;
+    cursor: pointer;
+}
+#footer-bei p{
+    text-align: center;
+    color: #aaa;
+    font-size: 1.3rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+/* 补充*/
+#bga-new:hover,#bga-novel:hover,#bga-video:hover,#bga-life:hover,#bga-map:hover,#bga-many:hover,#tie:hover,#hao:hover,#map:hover,#vip:hover,#photo:hover,#musics:hover,#nuo:hover,#and:hover,#huanbao:hover,#xiaoqu:hover,#jiqi:hover,#huang:hover,#masha:hover,#ench:hover,#film:hover,#tuan:hover,#waimai:hover,#taxi:hover,#hotel:hover,#cate:hover,#KTV:hover,#bank:hover,#feiji:hover,#train:hover,#car:hover,#bus:hover,#tourism:hover,#doctor:hover{
+    background-color:transparent;
+}
+.huanbao,.xiaoqu{
+    padding: 0;
+    color: #F00;
+}
+@media screen and (max-width: 400px){
+    #real-time ul li a {
+        font-size: 1rem;
+    }
+}
+/*}*/
