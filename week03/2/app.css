@@ -1,0 +1,250 @@
+body{
+        margin: 0;
+        padding: 0;
+        background-color: #999;
+    }
+    .con{
+        overflow: hidden;
+        width: 450px;
+        height: 420px;
+        padding-top: 20px;
+        background-color:#FFF;
+        left: 50%;
+        top: 50%;
+        position:absolute;
+        margin-left: -200px;
+        margin-top: -200px;
+        z-index: -5;
+    }
+    .head{
+
+        width: 240px;
+        height: 240px;
+        background-color: #ccc;
+        margin: 20px auto;
+        border-radius: 50%;
+        z-index: 200;
+    }
+    .ear-left{
+        width: 100px;
+        height: 100px;
+        background-color:transparent;
+        position: relative;
+        float: left;
+        z-index: -10;
+        -webkit-transform: rotate(-60deg);
+        -moz-transform: rotate(-60deg);
+        -ms-transform: rotate(-60deg);
+        -o-transform: rotate(-60deg);
+        transform: rotate(-60deg);
+        margin-left: 50px;
+    }
+    .ear-left-big{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #F00;
+        z-index:-20;
+        position:absolute;
+    }
+    .ear-left-sm{
+        width: 130px;
+        height: 130px;
+        background-color:#FFF;
+        border-radius: 50% 50% 0 50%;
+        z-index: -10;
+        position: absolute;
+        margin-left: 20px;
+    }
+    .ear-right{
+          width: 94px;
+          height: 115px;
+          background-color:transparent;
+          position: absolute;
+          left: 50%;
+          margin-left: 71px;
+          -webkit-transform: rotate(64deg);
+          -moz-transform: rotate(64deg);
+          -ms-transform: rotate(64deg);
+          -o-transform: rotate(64deg);
+          transform: rotate(64deg);
+          z-index: -10;
+          margin-top: -10px;
+    }
+    .ear-right-big{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: #F00;
+        position:relative;
+        float: right;
+        margin-top: 20px;
+    }
+    .ear-right-sm{
+        width: 130px;
+        height: 130px;
+        background-color:#FFF;
+        border-radius: 50% 50% 0 50%;
+        position: absolute;
+        margin-top: 20px;
+        float: left;
+        margin-left: -58px;
+    }
+    .ear-right-w{
+            width: 37px;
+            height: 87px;
+            background-color: #FFF;
+            z-index: 8;
+            position: absolute;
+            margin-left: -56px;
+            margin-top: 76px;
+    }
+    .eye{
+        width: 50px;
+        height: 50px;
+        background-color: #000;
+        position: absolute;
+        border-radius: 50%;
+        left: 50%;
+        top: 25%;
+    }
+    .eye-left{
+        margin-left: -65px;
+    }
+    .eye-right{
+        margin-left: 15px;
+    }
+    .eye div{
+        width: 13px;
+        height: 13px;
+        background-color: #FFF;
+        border-radius: 50%;
+        margin-top: 20px;
+        
+    }
+    .animation-rotl{
+        -webkit-animation: rotl 1s ease infinite alternate;
+        -moz-animation: rotl 1s ease infinite alternate;
+        -ms-animation: rotl 1s ease infinite alternate;
+        -o-animation: rotl 1s ease infinite alternate;
+        animation: rotl 1s ease infinite alternate;
+    }
+    @-webkit-keyframes rotl{
+        0%{-webkit-transform:rotate(-180deg);}
+        100%{-webkit-transform:rotate(0deg);}
+    }
+    @-moz-keyframes rotl{
+        0%{-moz-transform:rotate(-180deg);}
+        100%{-moz-transform:rotate(0deg);}
+    }
+    @-ms-keyframes rotl{
+        0%{-ms-transform:rotate(-180deg);}
+        100%{-ms-transform:rotate(0deg);}
+    }
+    @-o-keyframes rotl{
+        0%{-o-transform:rotate(-180deg);}
+        100%{-o-transform:rotate(0deg);}
+    }
+    .animation-rotr{
+        -webkit-animation: rotr 1s ease infinite alternate;
+        -moz-animation: rotr 1s ease infinite alternate;
+        -ms-animation: rotr 1s ease infinite alternate;
+        -o-animation: rotr 1s ease infinite alternate;
+    }
+    @-webkit-keyframes rotr{
+        0%{-webkit-transform:rotate(0deg);}
+        100%{-webkit-transform:rotate(-180deg);}
+    }
+    @-moz-keyframes rotr{
+        0%{-moz-transform:rotate(0deg);}
+        100%{-moz-transform:rotate(-180deg);}
+    }
+    @-ms-keyframes rotr{
+        0%{-ms-transform:rotate(0deg);}
+        100%{-ms-transform:rotate(-180deg);}
+    }
+    @-o-keyframes rotr{
+        0%{-o-transform:rotate(0deg);}
+        100%{-o-transform:rotate(-180deg);}
+    }
+    .mo{
+        height: 60px;
+        width: 14px;
+        background-color: #FFF;
+        border-radius: 50%;
+        left: 50%;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: -7px;
+    }
+    .neck{
+        width: 0px;
+        height: 0px;
+        border: 20px solid;
+        background-color: transparent;
+        border-bottom-color: #CCC;
+        border-left-color: transparent;
+        border-right-color: transparent;
+        border-top-color: transparent;
+        margin: -43px auto;
+    }
+    .body{
+        width: 130px;
+        height: 150px;
+        background-color:transparent;
+        margin: 0 auto;
+    }
+    .body-div{
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+        margin: 45px auto;
+    }
+    .hand-l{
+        width: 0;
+        height: 0;
+        border:20px solid;
+        border-right-color: #ccc;
+        border-bottom-color: transparent;
+        border-left-color: transparent;
+        border-top-color: transparent;
+        position: absolute;
+        margin-top: 55px;
+        margin-left: -26px;
+    }
+    .hand-r{
+        width: 0;
+        height: 0;
+        border:20px solid;
+        border-right-color:transparent;
+        border-bottom-color: transparent;
+        border-left-color: #ccc;
+        border-top-color: transparent;
+        position: absolute;
+        margin-top: 55px;
+        margin-left:116px;
+    }
+    .footing{
+        width: 100px;
+        height: 30px;
+        background-color:transparent;
+        margin: 0 auto;
+    }
+    .footing div{
+          width: 0;
+          height: 0;
+          border: 14px solid;
+          background-color: transparent;
+          border-bottom-color: transparent;
+          border-right-color: transparent;
+          border-left-color: transparent;
+          border-top-color: #CCC;
+          float: left;
+          margin-top: -6px;
+    }
+    .footing-l{
+        margin-left: 5px;
+    }
+    .footing-r{
+          margin-left: 33px;
+    }
