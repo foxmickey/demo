@@ -1,0 +1,949 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Your Name (you@example.org)
+ * @date    2015-11-15 16:47:12
+ * @version $Id$
+ */
+/*整体布局*/
+.header{
+    width: auto;
+    height: 110px;
+}
+.contenter{
+    width: 1000px;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    /*margin: 0 auto;*/
+}
+.footer{
+    width: auto;
+    height: 320px;
+}
+/*top布局*/
+
+/*logo整行布局*/
+.top-logo{
+    height: 50px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.top-logo-span-1{
+    width: 200px;
+    height: 40px;
+    display: block;
+    float: left;
+}
+.top-logo-span-2{
+    width: 380px;
+    height: 35px;
+    display: block;
+    margin: 0 auto;
+}
+.span-input-1{
+    height: 30px;
+    width: 320px;
+    display: inline-block;
+}
+.span-input-2{
+    height: 35px;
+    width: 40px;
+    float: right;
+    display: inline-block;
+}
+.top-logo-span-3{
+    width: 300px;
+    height: 30px;
+    display: block;
+    float: right;
+    margin-top: -30px;
+}
+/*top-线*/
+.top-line{
+    height: 2px;
+    width: 100%;
+}
+/*top-menu*/
+#top-menu{
+    width: 100%;
+    height: auto;
+}
+.top-menu{
+    height: 45px;
+    width: 1000px;
+    margin: 0 auto;
+}
+.top-menuUl-home{
+    float: left;
+}
+.top-menuUl-home li{
+    display: inline;
+}
+.top-menuUl-vip{
+    float: right;
+}
+.top-menuUl-vip li {
+    display: inline;
+}
+/*主容器布局开始*/
+
+/*con-top*/
+.con-top{
+    width: 1000px;
+    height: 300px;
+    margin: 20px auto;
+    position: relative;
+    /*background-color: #456;*/
+}
+/*con-top的双飞翼布局*/
+.con-top-mid{
+    width: 560px;
+    height: 300px;
+    float: left;
+    margin-left: 230px;
+    overflow: hidden;
+    position: absolute;
+    /*background-color: #489;*/
+}
+/*轮播*/
+.top-mid-slider{
+    width: 4200px;
+    height: 300px;
+    position: absolute;
+    /*background-color: #F50;*/
+    left: -560px;
+}
+.mid-slider-0,.mid-slider-1,.mid-slider-2,.mid-slider-3,.mid-slider-4,.mid-slider-5,.mid-slider-6{
+    width: 560px;
+    height: 300px;
+    float: left;
+    /*background-color: #FF0;*/
+}
+.mid-slider-0{
+    left: -560px;
+}
+.mid-slider-1{
+    left: 0;
+}
+.mid-slider-2{
+    left: 560px;
+}
+.mid-slider-3{
+    left: 1120px;
+}
+.mid-slider-4{
+    left: 1680px;
+}
+.mid-slider-5{
+    left: 2240px;
+}
+.mid-slider-6{
+    left: 2800px;
+}
+.top-mid-button{
+    width: 300px;
+    height: 25px;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    bottom: 30px;
+    left: 140px;
+}
+.mid-button-ul{
+    padding-top: 5px;
+}
+.mid-button-ul li{
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+}
+/*for left for right*/
+.top-mid-double{
+    width: 560px;
+    height: 30px;
+    /*background-color: #F00;*/
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+}
+.dou-btn-left{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: left;
+    /*background: url(../images/banner-left_fe0df34.png);*/
+}
+.dou-btn-right{
+    width: 30px;
+    height: 30px;
+    display: block;
+    float: right;
+    background-color: #FF0;
+}
+/*top-left*/
+.con-top-left{
+    width: 210px;
+    height: 301px;
+    float: left;
+    background-color: #33b75a;
+}
+/*公共的top-li-div类*/
+.top-li-div{
+    width: 380px;
+    height: 396px;
+    position: absolute;
+    left: 210px;
+    top: 0;
+    /*display: none;*/
+}
+/*后端开发*/
+.div-back-end{
+    height: 650px;
+}
+/*物联网*/
+.div-intelligence{
+    height: 430px;
+}
+/*top-right*/
+.con-top-right{
+    width: 209px;
+    height: 300px;
+    float: right;
+    /*background-color: #215;*/
+}
+.top-right-top{
+    height: 110px;
+    /*background-color: #F00;*/
+}
+.top-right-bottom{
+    height: 110px;
+    /*background-color: #Ff0;*/
+}
+
+/*热门推荐等*/
+.con-sub-menu{
+    height: 580px;
+    width: 1000px;
+    /*background-color: #789;*/
+    margin: 0 auto;
+}
+.sub-hot-ul{
+    /*margin: 0;*/
+    padding: 0;
+    margin-left: 2px;
+}
+.sub-hot-ul li{
+    list-style: none;
+    float: left;
+}
+.hot-menu-div{
+    width: 1000px;
+    height: 530px;
+    position: absolute;
+    left: 0;
+    /*background-color: #F00;*/
+    display: none;
+}
+/*hots-img-div*/
+.hots-img-div{
+    width: 234px;
+    min-height: 220px;
+    float: left;
+    position: absolute;
+    border: 1px solid #CCC;
+    margin-top: 30px;
+    padding-bottom: 20px;
+}
+.hots-img-div-1{
+    left: 0px;
+    z-index: 1000;
+    background-color: #FFF;
+}
+.hots-img-div-2{
+    left: 254px;
+    z-index: 1000;
+    background-color: #FFF;
+}
+.hots-img-div-3{
+    left: 508px;
+    z-index: 1000;
+    background-color: #FFF;
+}
+.hots-img-div-4{
+    left: 762px;
+    z-index: 1000;
+    background-color: #FFF;
+}
+.hots-img-div-5{
+    left: 0px;
+    top: 260px;
+    z-index: 900;
+    background-color: #FFF;
+}
+.hots-img-div-6{
+    left: 254px;
+    top: 260px;
+    z-index: 900;
+    background-color: #FFF;
+}
+.hots-img-div-7{
+    left: 508px;
+    top: 260px;
+    z-index: 900;
+    background-color: #FFF;
+}
+.hots-img-div-8{
+    left: 762px;
+    top: 260px;
+    z-index: 900;
+    background-color: #FFF;
+}
+.hots-text{
+    width: 215px;
+    min-height: 73px;
+    margin-top: -10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*background-color: #aaa;*/
+}
+.hots-img-div-margin{
+    margin-right: 18px;
+}
+/*hots1*/
+.hots1-img-div{
+    width: 235px;
+    height: 127px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.hots-img{
+    width: 235px;
+    height: 127px;
+    cursor: pointer;
+}
+.hots1-top-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+.hots1-top-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+    display: none;
+}
+.hots1-bottom-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    display: none;
+}
+.hots1-bottom-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+}
+/*hots2*/
+.hots2-img-div{
+    width: 235px;
+    height: 127px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.hots2-top-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+.hots2-top-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+    display: none;
+}
+.hots2-bottom-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    display: none;
+}
+.hots2-bottom-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+}
+/*hots3*/
+.hots3-img-div{
+    width: 235px;
+    height: 127px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.hots3-top-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+.hots3-top-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+    display: none;
+}
+.hots3-bottom-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    display: none;
+}
+.hots3-bottom-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+}
+/*hots4*/
+.hots4-img-div{
+    width: 235px;
+    height: 127px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.hots4-top-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+.hots4-top-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+    display: none;
+}
+.hots4-bottom-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    display: none;
+}
+.hots4-bottom-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+}
+/*hots5*/
+.hots5-img-div{
+    width: 235px;
+    height: 127px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.hots5-top-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+.hots5-top-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+    display: none;
+}
+.hots5-bottom-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    display: none;
+}
+.hots5-bottom-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+}
+
+/*hots6*/
+.hots6-img-div{
+    width: 235px;
+    height: 127px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.hots6-top-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+.hots6-top-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+    display: none;
+}
+.hots6-bottom-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    display: none;
+}
+.hots6-bottom-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+}
+/*hots7*/
+.hots7-img-div{
+    width: 235px;
+    height: 127px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.hots7-top-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+.hots7-top-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+    display: none;
+}
+.hots7-bottom-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    display: none;
+}
+.hots7-bottom-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+}
+/*hots8*/
+.hots8-img-div{
+    width: 235px;
+    height: 127px;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+}
+.hots8-top-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+}
+.hots8-top-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+    display: none;
+}
+.hots8-bottom-left-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: left;
+    display: none;
+}
+.hots8-bottom-right-107{
+    width: 107px;
+    height: 30px;
+    float: left;
+    text-align: right;
+}
+/*职业路径图*/
+.con-occupation-title{
+    height: 40px;
+    width: 1000px;
+    margin: 30px auto 0 auto;
+    /*background-color: #378229;*/
+}
+.con-occupation{
+    width: 1000px;
+    height: 530px;
+    margin: 0 auto;
+    /*background-color: rgba(0,0,0,0.2);*/
+}
+.con-occ{
+    width: 198px;
+    height: 270px;
+    float: left;
+    /*border: 1px solid #CCC;*/
+}
+.con-occupation-1{
+}
+.con-occupation-2{
+}
+.con-occupation-3{
+}
+.con-occupation-4{
+
+}
+.con-occupation-5{
+}
+.con-occupation-6{
+}
+.con-occupation-7{
+
+}
+.con-occupation-8{
+}
+.con-occupation-9{
+}
+.con-occupation-10{
+}
+.web-staty-a{
+    width: 198px;
+    height: 270px;
+    display: block;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*知识体系图*/
+.con-boutique-tile{
+    height: 30px;
+    width: 1000px;
+    margin: 30px auto 0 auto;
+    /*background-color: #431458;*/
+}
+
+.con-boutique{
+    height: 150px;
+    width: 1000px;
+    margin: 0 auto;
+    /*background-color: #451249;*/
+}
+.know-li{
+    width: 165px;
+    height: 120px;
+    display: block;
+    float: left;
+    /*background-color: #F00;*/
+}
+.know-li-1{
+    
+}
+.know-li-2,
+.know-li-3,
+.know-li-4,
+.know-li-5,
+.know-li-6{
+    margin-left: -1px;
+}
+.know-a-1{
+    width: 100%;
+    height: 100%;
+    display: block;
+    /*background-color: #123;*/
+}
+.li-span-11{
+    width: 165px;
+    height: 120px;
+    display: block;
+    box-sizing:border-box;
+    /*background: #FF0;*/
+    position: absolute;
+}
+.li-span-12{
+    width: 165px;
+    height: 120px;
+    display: block;
+    position: absolute;
+    box-sizing:border-box;
+}
+/*精品课程*/
+.con-course-tile{
+    height: 30px;
+    width: 1000px;
+    margin: 30px auto 0 auto;
+    /*background-color: #431458;*/
+}
+.con-course{
+    height: 300px;
+    width: 1000px;
+    margin: 0 auto;
+    /*background-color: #451249;*/
+}
+.course-ul{
+    /*list-style: none;*/
+}
+.course-ul li{
+    width: 233px;
+    height: 260px;
+    display: block;
+    float: left;
+    border: 1px solid #CCC;
+    /*list-style: none;*/
+}
+.course-li-1,.course-li-2,.course-li-3{
+    margin-right: 20px;
+}
+.below-div{
+    position: absolute;
+    width: 233px;
+    height: 220px;
+    /*background-color: #CCC;*/
+}
+.above-div1{
+    position: absolute;
+    width: 233px;
+    height: 220px;
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+}
+.above-div2{
+    position: absolute;
+    width: 233px;
+    height: 220px;
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+}
+.above-div3{
+    position: absolute;
+    width: 233px;
+    height: 220px;
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+}
+.above-div4{
+    position: absolute;
+    width: 233px;
+    height: 220px;
+    display: none;
+    background-color: rgba(255,255,255,0.8);
+}
+.course-li-1:hover{
+    border: 1px solid #33b75a;
+}
+.course-li-1:hover .above-div1{
+    display: block;
+}
+.course-li-2:hover{
+    border: 1px solid #33b75a;
+}
+.course-li-2:hover .above-div2{
+    display: block;
+}
+.course-li-3:hover{
+    border: 1px solid #33b75a;
+}
+.course-li-3:hover .above-div3{
+    display: block;
+}
+.course-li-4:hover{
+    border: 1px solid #33b75a;
+}
+.course-li-4:hover .above-div4{
+    display: block;
+}
+/*wiki*/
+.con-wiki-title{
+    height: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    /*background-color: #128;*/
+}
+.con-wiki{
+    height: 400px;
+    width: 1000px;
+    margin: 0 auto;
+    /*background-color: #459;*/
+}
+.wiki-div-1{
+    width: 333px;
+    height: 330px;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    border: 1px solid #CCC;
+}
+.wiki-div-2{
+    width: 333px;
+    height: 330px;
+    box-sizing: border-box;
+    float: left;
+    padding: 20px;
+    border: 1px solid #CCC;
+    border-left: 0;
+    border-right: 0;
+}
+.wiki-div-3{
+    width: 333px;
+    height: 330px;
+    box-sizing: border-box;
+    padding: 20px;
+    float: left;
+    border: 1px solid #CCC;
+    /*border-left: 0;*/
+}
+
+.fanye-left-div{
+    width: 140px;
+    height: 200px;
+    float: left;
+    margin-right: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #999;
+}
+.fanye-right-div{
+    width: 140px;
+    height: 200px;
+    float: left;
+    border-radius: 10px;
+    background-color: #999;
+}
+.wiki-bottom-div{
+    width: 293px;
+    height: 90px;
+    float: left;
+    box-sizing: border-box;
+    /*background-color: #234;*/
+}
+.bottom-div-span-1{
+    width: 50%;
+    height: 40px;
+    display: block;
+    float: left;
+    text-align: center;
+    box-sizing: border-box;
+
+    /*background-color: #758;*/
+}
+.bottom-div-span-2{
+    width: 50%;
+    height: 40px;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+
+    display: block;
+    /*background-color: #758;*/
+}
+.bottom-div-span-3{
+    width: 50%;
+    height: 40px;
+    float: left;
+    display: block;
+    text-align: left;
+    box-sizing: border-box;
+}
+.bottom-div-span-4{
+    width: 50%;
+    height: 40px;
+    float: right;
+    margin-top: -40px;
+    display: block;
+    text-align: right;
+    box-sizing: border-box;
+}
+/*战略合作企业*/
+.con-strategy-title{
+    height: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #351;
+}
+.con-strategy{
+    height: 150px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #716331;
+}
+/*合作院校*/
+.con-universities-title{
+    height: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #12ab33;
+}
+.con-universities{
+    height: 150px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #312231;
+}
+/*媒体报道*/
+.con-media-title{
+    height: 30px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #ad2;
+}
+.con-media{
+    height: 150px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #529236;
+}
+
+/*底部布局*/
+/*
+.footer-map{
+    height: 270px;
+    width: 1000px;
+    position: absolute;
+    background-color: #123;
+}
+.footer-reversed{
+    height: 50px;
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #753;
+}*/
