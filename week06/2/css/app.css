@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*清除默认样式*/
+input,
+button,
+select,
+textarea{ outline:none;}
+textarea{resize:none;}
+#body{
+    background-color: #FFF;
+}
+/*布局开始*/
+.con{
+    width: 1150px;
+    height: 500px;
+    margin: 0 auto;
+}
+.con-body{
+    width: 100%;
+    height: auto;
+    float: left;
+}
+.bod-body{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.con-left{
+    height: 500px;
+    width: 50px;
+    float: left;
+    margin-left: -100%;
+    background-color: #e6e6e6;
+}
+.con-right{
+    height: 500px;
+    width: 50px;
+    float: left;
+    margin-left: -100px;
+    background-color: #CCC;
+}
+.body-top{
+    width: 100%;
+    height: 50px;
+}
+/*布局结束*/
+
+/*顶部颜色*/
+
+.body-top-ul{
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+.body-top-ul li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100px;
+    height: 50px;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+}
+
+/*input输入*/
+.body-mid{
+    width: 845px;
+    height: 75px;
+    padding-top: 20px;
+    border-top: 1px solid #CCC;
+    text-align: center;
+    position: relative;
+    display: inline-flex;
+    padding-left: 155px;
+}
+.body-img{
+    bottom: 0;
+    height: 48px;
+    margin-right: 20px;
+}
+.body-input{
+    width: 500px;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 3px;
+    font-size: 20px;
+    padding-left: 3px;
+}
+.body-botton{
+    width: 100px;
+    height: 42px;
+    border: 0;
+    line-height: 40px;
+    margin-top: 4px;
+    margin-left: -101px;
+    cursor: pointer;
+}
+.body-botton:hover{
+    background-color: #CCC;
+}
+
+/*导航*/
+.div-input{
+    position: relative;
+	width:1000px;
+}
+.bod-input-ul li{
+    list-style: none;
+    float: left;
+}
+.bod-input-ul li a{
+    z-index: 100;
+    background-color: #FFF;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    width: 90px;
+    height: 35px;
+    line-height: 35px;
+    position: absolute;
+}
+/*单选按钮*/
+.div-input-p{
+    height: 3px;
+    width: 100%;
+    display: block;
+    background-color: #0aa770;
+}
+.bod-input-ul li input{
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    opacity: 0;
+    z-index: 1000;
+    position: absolute;
+    cursor: pointer;
+}
+/*导航*/
+#bod-input-ul li input:checked + a{
+    background-color: #0aa770;
+}
+#input-title-1{
+    left: 0;
+}
+#input-title-1 + a{
+    left: 0;
+}
+#input-title-2{
+    left: 91px;
+}
+#input-title-2 + a{
+    left: 91px;
+}
+#input-title-3{
+    left: 182px;
+}
+#input-title-3 + a{
+    left: 182px;
+}
+#input-title-4{
+    left: 273px;
+}
+#input-title-4 + a{
+    left: 273px;
+}
+#input-title-5{
+    left: 364px;
+}
+#input-title-5 + a{
+    left: 364px;
+}
+#input-title-6{
+    left: 455px;
+}
+#input-title-6 + a{
+    left: 455px;
+}
+#input-title-7{
+    left: 546px;
+}
+#input-title-7 + a{
+    left: 546px;
+}
+#input-title-8{
+    left: 637px;
+}
+#input-title-8 + a{
+    left: 637px;
+}
+#input-title-9{
+    left: 728px;
+}
+#input-title-9 + a{
+    left: 728px;
+}
+#input-title-10{
+    left: 819px;
+}
+#input-title-10 + a{
+    left: 819px;
+}
+#input-title-11{
+    left: 910px;
+}
+#input-title-11 + a{
+    left: 910px;
+}
+/*left*/
+.con-left-ul{
+	margin:0;
+	padding:0;
+	width:50px;
+}
+.con-left-ul li{
+	list-style:none;
+	text-align:center;
+	width:50px;
+	height:20px;
+	display:block;
+	margin-bottom: 5px;
+	padding-top:40px;
+	cursor: pointer;
+}
+.con-left-ul li a{
+	font-size:12px;
+	height:20px;
+	line-height:20px;
+	color:#999;
+	text-decoration:none;
+}
+.con-left-li-1{
+	background:url(../images/meng1.png) no-repeat;
+	background-position: 9px 9px;	
+}
+.con-left-li-2{
+	background:url(../images/meng2.jpg) no-repeat;
+	background-position: 9px 9px;	
+}
+.con-left-li-3{
+	background:url(../images/meng3.png) no-repeat;
+	background-position: 9px 9px;	
+}
+.con-left-li-4{
+	background:url(../images/meng4.png) no-repeat;
+	background-position: 9px 9px;	
+}
+.con-left-li-5{
+	background:url(../images/meng5.png) no-repeat;
+	background-position: 9px 9px;	
+}
+/*right*/
+.con-a{
+	width:50px;
+	height:50px;
+	margin-bottom:5px;
+	display:block;
+    color: #FFF;
+    line-height: 50px;
+    text-align: center;
+    font-size: 12px;
+    cursor: pointer;
+    background-color: #0aa770;
+}
+.con-a-1{
+	background-color: #000;
+}
