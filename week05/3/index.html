@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>康棒棒--3期3班--数组</title>
+	<meta name="keywords" content="搜索 极客学院 康棒棒 3期3班">
+	<meta name="description" content="这是极客学院大web就业班3期3班康棒棒的第五周的作业">
+	<link href="images/bangfavicon52.ico" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
+</head>
+<body>
+    <p id="pid"></p>
+    <script type="text/javascript">
+    // str数组您可以在里面输入任何字符
+        var str='asdfbcssadfdfdefghjkwflmnfnohshpeaeraertaadgdfgaaasqhjlsdfrstuvwxyz';
+        // 定义y用来接收次数，默认为0；
+        var y=0;var x;
+        for(i=0;i<str.length;i++){
+            // 首先遍历数组
+            var z=str[i];
+            // 获取出现次数最多的字符
+            var t=str.split(z).length-1;
+                if (y<t) {
+                    y=t;
+                    x=i;
+                };
+                // 重新遍历让出现次数最多的字符与数组进行比较，如果相等进行输出打印
+        if (str.charAt(x)==str[i]){
+            document.write("第"+(i+1)+"个");
+            };
+        };
+        document.getElementById("pid").innerHTML=("出现次数最多的字母为"+str.charAt(x)+"共"+y+"次");
+    </script>
+</body>
+</html>

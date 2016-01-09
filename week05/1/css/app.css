@@ -1,0 +1,41 @@
+/*背景色*/
+body{
+    background-color: #1D5A5E;
+}
+
+.div{
+    width: 400px;
+    height: 300px;
+    margin: 200px auto;
+}
+
+/*range*/
+#range{
+    margin: 0;
+    width: 400px;
+    padding: 0 0 20px 0;
+}
+
+/*分数*/
+#in-number{
+    width: 400px;
+    height: 50px;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    display: block;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.9);
+}
+
+/*等级*/
+#crade{
+    height: 50px;
+    width: 400px;
+    display: block;
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: rgba(255,255,255,0.9);
+}
