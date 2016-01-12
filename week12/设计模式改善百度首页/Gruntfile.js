@@ -1,3 +1,6 @@
+/* npm install */
+/* 进入到当前目录下执行 grunt命令 */
+
 module.exports=function (grunt) {
 	grunt.initConfig({
 		pkg:grunt.file.readJSON('package.json'),

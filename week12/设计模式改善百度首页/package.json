@@ -15,5 +15,3 @@
     "grunt-contrib-watch": "^0.6.1"
   }
 }
-/* npm install */
-/* 进入到当前目录下执行 grunt命令 */
