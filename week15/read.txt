@@ -1,0 +1,3 @@
+先下载依赖项 : npm install
+然后运行： ./index.sh
+如果提示权限不够则运行   chmod u+x index.sh
